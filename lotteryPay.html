@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title></title>
+		<style type="text/css">
+			* {
+				margin: 0;
+				padding: 0;
+			}
+			
+			body {
+				font-size: 62.5%;
+				max-height: 768px;
+				width: 100%;
+			}
+			
+			#header {
+				/*    		border-bottom: 1px solid grey;*/
+				width: 100%;
+				text-align: center;
+				padding-top: 1rem;
+				padding-bottom: 1rem;
+				font-size: 2rem;
+			}
+			
+			ul li {
+				list-style: none;
+			}
+			
+			#back,
+			#title {
+				display: inline-block;
+			}
+			
+			#back {
+				position: absolute;
+				left: 2rem;
+			}
+			
+			#timetable {
+				width: 100%;
+			}
+			
+			#periods {
+				width: 30%;
+				border: .1rem solid gray;
+				display: inline-block;
+			}
+			
+			#blocking {
+				display: inline-block;
+				border: solid .1rem gray;
+				width: 68%;
+			}
+			
+			#manMachine {
+				text-align: center;
+				padding-top: .5rem;
+				padding-bottom: .5rem;
+			}
+			
+			#man {
+				padding-right: 1rem;
+			}
+			
+			#machine {
+				padding-left: 1rem;
+			}
+			
+			.delete,
+			.details {
+				display: inline-block;
+			}
+			
+			#selected>ul {
+				padding-left: 0rem;
+			}
+			
+			.record {
+				position: relative;
+			}
+			
+			.details>img {
+				position: absolute;
+				right: .8rem;
+				top: 0.8rem;
+			}
+			
+			.delete>img {
+				position: absolute;
+				left: .8rem;
+				top: 0.8rem;
+			}
+			
+			.lotteryRecord,
+			.sel {
+				padding-left: 5rem;
+			}
+			
+			#deal {
+				margin-left: 2.8rem;
+			}
+			
+			#footer {
+				bottom: 0;
+				position: fixed;
+				width: 100%;
+				background-color: ghostwhite;
+			}
+			
+			#balance {
+				width: 100%;
+				padding-left: 3rem;
+			}
+			
+			#multiple,
+			#period {
+				display: inline-block;
+				padding-top: .4rem;
+				padding-bottom: .4rem;
+				width: 49%;
+    			text-align: center;
+			}
+			
+			#multiples,
+			#addPeriod {
+				width: 4rem;
+			}
+			
+			#total {
+				width: 100%;
+				text-align: center;
+				position: relative;
+				padding-bottom: .8rem;
+				padding-top: .8rem;
+			}
+			
+			#addTo {
+				position: absolute;
+				left: 3rem;
+			}
+			
+			#refer {
+				position: absolute;
+				right: 3rem;
+			}
+			
+			#popUp {
+				width: 60%;
+				height: 10rem;
+				text-align: center;
+				background-color: lightblue;
+				margin-left: 20%;
+				margin-top: 60%;
+				z-index: 2;
+				position: absolute;
+				display: none;
+			}
+			
+			#examine,
+			#submit {
+				display: inline-block;
+				width: 50%;
+				float: left;
+				border: solid .1rem black;
+				margin-bottom: 0px;
+			}
+			
+			#hint {
+				height: 7.8rem;
+			}
+			#continuous{
+				text-align: center;
+				display: none;
+			}
+		</style>
+	</head>
+	<link rel="stylesheet" href="./node_modules/zui/dist/css/zui.min.css">
+	
+
+	<body>
+		<div id="popUp">
+			<div id="hint">
+				已提交到彩票店，祝您中奖
+			</div>
+			<div id="examine">
+				查看订单
+			</div>
+			<div id="submit">
+				确定
+			</div>
+		</div>
+		<div id="header">
+			<div id="back">
+				<a href="">
+					<</a>
+			</div>
+			<div id="title">
+				投注确认
+			</div>
+		</div>
+		<div id="timetable">
+			<span id="periods">
+    		160825-26期
+    	</span>
+			<span id="blocking">
+    		（截止时间）：<span id="blockingTime">9:20</span>
+			</span>
+		</div>
+		<div id="manMachine">
+			<span id="man">
+				+继续选号
+			</span>
+			<span id="machine">
+				+机选一注
+			</span>
+		</div>
+		<div id="selected">
+			<ul>
+				<!--<li class="record">
+					<div class="delete">
+						<img src="images/u20.png" />
+					</div>
+					<span class="lotteryRecord">
+						
+					</span>
+					<div class="details">
+						<img src="images/u39.png" />
+					</div>
+					<br />
+					<span class="sel">
+						
+					</span>
+					<span class="bettingType">
+						
+					</span>
+					<span class="type">
+						单式
+					</span>
+					<span class="betting">
+						1
+					</span>注
+					<span class="pay">
+						6
+					</span>元
+				</li>-->
+			</ul>
+			<input id="deal" type="checkbox" name="items" value="" />我已阅读并同意
+			<<彩店###服务协议>>
+		</div>
+		<div id="footer">
+			<div id="balance">
+				余额：
+				<span id="balanceSum">
+					
+				</span> 元
+			</div>
+			<div id="multiple">
+				投
+				<input type="number" name="" id="multiples" /> 倍
+			</div>
+			<div id="period">
+				追
+				<input type="number" name="" min="1" id="addPeriod" /> 期
+			</div>
+			<div id="continuous">
+				<input id="continuousDeal" type="checkbox" name="items" value="" />
+				中奖后停止
+			</div>
+			<div id="total">
+				<input type="button" name="" id="addTo" value="智能追号" />
+				<span id="totalPay">
+					1注   1倍   2元   
+				</span>
+				<input type="button" name="" id="refer" value="提交" />
+			</div>
+		</div>
+		<!-- ZUI Javascript 依赖 jQuery -->
+		<script src="./node_modules/zui/dist/lib/jquery/jquery.js"></script>
+		<!-- ZUI 标准版压缩后的 JavaScript 文件 -->
+		<script src="./node_modules/zui/dist/js/zui.min.js"></script>
+		<script src="js/lotteryPay.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+
+</html>

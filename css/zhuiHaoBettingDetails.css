@@ -1,0 +1,91 @@
+/*追号记录 css*/
+.betting-info>p>span{
+    width: 50%;
+    float: left;
+}
+.betting-info .betting-money{
+    color: #f00;
+}
+
+.buy-list .table{
+    margin-bottom: 40px;
+    text-align: center;
+}
+.buy-list .table th{
+    background: #F9F9F9;
+    text-align: center;
+}
+/*未中奖 color*/
+.not-winning-color{
+    color: #ccc;
+}
+/*待开奖 bg*/
+.wait-lottery-color{
+    color: #6FCD6F;
+}
+div.message{
+    margin-bottom: 2px;
+}
+.message .icon{
+    float: right;
+    margin-right: 10px;
+    margin-top: 5px;
+    font-size: 1.5rem;
+}
+/*投注内容列表*/
+.betting-content-list{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.betting-content-list li{
+    height: 5rem;
+    border-bottom: 1px solid #cccccc;
+}
+.betting-content-list li>span{
+    display: inline-block;
+}
+.betting-content-list li>span:first-child{
+    width: 15%;
+    text-align: center;
+    line-height: 5rem;
+    float: left;
+}
+
+.betting-content-list .number-list>span{
+    display: inline-block;
+    width: 1.83rem;
+    height: 1.83rem;
+    font-size: 1.16rem;
+    line-height: 1.83rem;
+    -webkit-box-shadow: 0 0 0 1px #bc102d;
+    box-shadow: 0 0 0 1px #bc102d;
+    -webkit-border-radius: .916rem;
+    border-radius: .916rem;
+    text-align: center;
+    color: #bc102d;
+    margin: .4rem .625rem .4rem 0;
+}
+
+
+/*尾部样式*/
+.footer .btn{
+    width: 66%;
+    height: 3rem;
+    margin-left: calc(50% - 25%/2);
+    font-size: 1.3rem;
+    margin-top: 0.6rem;
+}
+
+/*中奖金额*/
+.bonus{
+    color: #f00;
+    font-weight: bold;
+}
+/*用于实现局部滑动盒子*/
+#wrapper2{
+    width: 100%;
+    height: 15rem;
+    position: relative;
+    overflow: hidden;
+}

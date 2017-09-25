@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--视口设置-->
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <!-- ZUI 标准版压缩后的 CSS 文件 -->
+    <link rel="stylesheet" href="./node_modules/zui/dist/css/zui.min.css">
+    <title>三堂彩</title>
+    <link rel="stylesheet" href="./css/common.css">
+    <!-- 引入 开奖信息页面公共样式-->
+    <link rel="stylesheet" href="css/lotteryInfoBase.css">
+</head>
+<body>
+<!--头部-->
+<header>
+    <span class="back" onclick="window.history.back(-1);"><i class="icon icon-angle-left"></i></span>
+    <p>双色球</p>
+</header>
+<!--主体内容-->
+<main class="wrapper">
+    <!--彩票开奖列表-->
+    <dl class="detail-list">
+        <dd>
+            <p>第201698期&emsp;2016-28-23(周二)</p>
+            <p>
+                <em class="smallRedball">01</em>
+                <em class="smallRedball">02</em>
+                <em class="smallRedball">03</em>
+                <em class="smallRedball">04</em>
+                <em class="smallRedball">05</em>
+                <em class="smallRedball">06</em>
+                <em class="smallBlueball">07</em>
+                <i class="icon icon-angle-right"></i>
+            </p>
+            <div class="awardDetail">
+                <table class="detailTable table table-bordered">
+                    <tbody>
+                        <tr>
+                            <td>本期销量</td>
+                            <td>奖池滚存</td>
+                        </tr>
+                        <tr>
+                            <!--销量 & 奖池-->
+                            <td class="sales">99999999</td>
+                            <td class="jackpot">99999999</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table class="detailTable table table-bordered">
+                    <tbody>
+                        <tr>
+                            <td>奖项</td>
+                            <td>中奖注数</td>
+                            <td>每注奖金</td>
+                            <td>中奖条件</td>
+                        </tr>
+                        <tr>
+                            <td>一等奖</td>
+                            <td>#</td>
+                            <td>####</td>
+                            <td><em class="text-red">6</em>+<em class="text-blue">1</em></td>
+                        </tr>
+                        <tr>
+                            <td>二等奖</td>
+                            <td>##</td>
+                            <td>####</td>
+                            <td><em class="text-red">6</em>+<em class="text-blue">0</em></td>
+                        </tr>
+                        <tr>
+                            <td>三等奖</td>
+                            <td>##</td>
+                            <td>3000</td>
+                            <td><em class="text-red">5</em>+<em class="text-blue">1</em></td>
+                        </tr>
+                        <tr>
+                            <td>四等奖</td>
+                            <td>##</td>
+                            <td>200</td>
+                            <td><em class="text-red">5</em>+<em class="text-blue">0</em>/<em class="text-red">4</em>+<em class="text-blue">1</em></td>
+                        </tr>
+                        <tr>
+                            <td>五等奖</td>
+                            <td>##</td>
+                            <td>10</td>
+                            <td><em class="text-red">4</em>+<em class="text-blue">0</em>/<em class="text-red">3</em>+<em class="text-blue">1</em></td>
+                        </tr>
+                        <tr>
+                            <td>六等奖</td>
+                            <td>##</td>
+                            <td>5</td>
+                            <td><em class="text-red">2</em>+<em class="text-blue">1</em>/<em class="text-red">1</em>+<em class="text-blue">1</em>/<em class="text-red">0</em>+<em class="text-blue">1</em></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </dd>
+        <dd>
+            <p>第201698期&emsp;2016-28-23(周二)</p>
+            <p>
+                <em class="smallRedball">01</em>
+                <em class="smallRedball">02</em>
+                <em class="smallRedball">03</em>
+                <em class="smallRedball">04</em>
+                <em class="smallRedball">05</em>
+                <em class="smallRedball">06</em>
+                <em class="smallBlueball">07</em>
+                <i class="icon icon-angle-right"></i>
+            </p>
+            <div class="awardDetail">
+                <table class="detailTable table table-bordered">
+                    <tbody>
+                    <tr>
+                        <td>本期销量</td>
+                        <td>奖池滚存</td>
+                    </tr>
+                    <tr>
+                        <!--销量 & 奖池-->
+                        <td class="sales">99999999</td>
+                        <td class="jackpot">99999999</td>
+                    </tr>
+                    </tbody>
+                </table>
+                <table class="detailTable table table-bordered">
+                    <tbody>
+                    <tr>
+                        <td>奖项</td>
+                        <td>中奖注数</td>
+                        <td>每注奖金</td>
+                        <td>中奖条件</td>
+                    </tr>
+                    <tr>
+                        <td>一等奖</td>
+                        <td>#</td>
+                        <td>####</td>
+                        <td><em class="text-red">6</em>+<em class="text-blue">1</em></td>
+                    </tr>
+                    <tr>
+                        <td>二等奖</td>
+                        <td>##</td>
+                        <td>####</td>
+                        <td><em class="text-red">6</em>+<em class="text-blue">0</em></td>
+                    </tr>
+                    <tr>
+                        <td>三等奖</td>
+                        <td>##</td>
+                        <td>3000</td>
+                        <td><em class="text-red">5</em>+<em class="text-blue">1</em></td>
+                    </tr>
+                    <tr>
+                        <td>四等奖</td>
+                        <td>##</td>
+                        <td>200</td>
+                        <td><em class="text-red">5</em>+<em class="text-blue">0</em>/<em class="text-red">4</em>+<em class="text-blue">1</em></td>
+                    </tr>
+                    <tr>
+                        <td>五等奖</td>
+                        <td>##</td>
+                        <td>10</td>
+                        <td><em class="text-red">4</em>+<em class="text-blue">0</em>/<em class="text-red">3</em>+<em class="text-blue">1</em></td>
+                    </tr>
+                    <tr>
+                        <td>六等奖</td>
+                        <td>##</td>
+                        <td>5</td>
+                        <td><em class="text-red">2</em>+<em class="text-blue">1</em>/<em class="text-red">1</em>+<em class="text-blue">1</em>/<em class="text-red">0</em>+<em class="text-blue">1</em></td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </dd>
+        <dd>
+            <p>第201698期&emsp;2016-28-23(周二)</p>
+            <p>
+                <em class="smallRedball">01</em>
+                <em class="smallRedball">02</em>
+                <em class="smallRedball">03</em>
+                <em class="smallRedball">04</em>
+                <em class="smallRedball">05</em>
+                <em class="smallRedball">06</em>
+                <em class="smallBlueball">07</em>
+                <i class="icon icon-angle-right"></i>
+            </p>
+            <div class="awardDetail">
+                <table class="detailTable table table-bordered">
+                    <tbody>
+                    <tr>
+                        <td>本期销量</td>
+                        <td>奖池滚存</td>
+                    </tr>
+                    <tr>
+                        <!--销量 & 奖池-->
+                        <td class="sales">99999999</td>
+                        <td class="jackpot">99999999</td>
+                    </tr>
+                    </tbody>
+                </table>
+                <table class="detailTable table table-bordered">
+                    <tbody>
+                    <tr>
+                        <td>奖项</td>
+                        <td>中奖注数</td>
+                        <td>每注奖金</td>
+                        <td>中奖条件</td>
+                    </tr>
+                    <tr>
+                        <td>一等奖</td>
+                        <td>#</td>
+                        <td>####</td>
+                        <td><em class="text-red">6</em>+<em class="text-blue">1</em></td>
+                    </tr>
+                    <tr>
+                        <td>二等奖</td>
+                        <td>##</td>
+                        <td>####</td>
+                        <td><em class="text-red">6</em>+<em class="text-blue">0</em></td>
+                    </tr>
+                    <tr>
+                        <td>三等奖</td>
+                        <td>##</td>
+                        <td>3000</td>
+                        <td><em class="text-red">5</em>+<em class="text-blue">1</em></td>
+                    </tr>
+                    <tr>
+                        <td>四等奖</td>
+                        <td>##</td>
+                        <td>200</td>
+                        <td><em class="text-red">5</em>+<em class="text-blue">0</em>/<em class="text-red">4</em>+<em class="text-blue">1</em></td>
+                    </tr>
+                    <tr>
+                        <td>五等奖</td>
+                        <td>##</td>
+                        <td>10</td>
+                        <td><em class="text-red">4</em>+<em class="text-blue">0</em>/<em class="text-red">3</em>+<em class="text-blue">1</em></td>
+                    </tr>
+                    <tr>
+                        <td>六等奖</td>
+                        <td>##</td>
+                        <td>5</td>
+                        <td><em class="text-red">2</em>+<em class="text-blue">1</em>/<em class="text-red">1</em>+<em class="text-blue">1</em>/<em class="text-red">0</em>+<em class="text-blue">1</em></td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </dd>
+        <dd>
+            <p>第201698期&emsp;2016-28-23(周二)</p>
+            <p>
+                <em class="smallRedball">01</em>
+                <em class="smallRedball">02</em>
+                <em class="smallRedball">03</em>
+                <em class="smallRedball">04</em>
+                <em class="smallRedball">05</em>
+                <em class="smallRedball">06</em>
+                <em class="smallBlueball">07</em>
+                <i class="icon icon-angle-right"></i>
+            </p>
+            <div class="awardDetail">
+                <table class="detailTable table table-bordered">
+                    <tbody>
+                    <tr>
+                        <td>本期销量</td>
+                        <td>奖池滚存</td>
+                    </tr>
+                    <tr>
+                        <!--销量 & 奖池-->
+                        <td class="sales">99999999</td>
+                        <td class="jackpot">99999999</td>
+                    </tr>
+                    </tbody>
+                </table>
+                <table class="detailTable table table-bordered">
+                    <tbody>
+                    <tr>
+                        <td>奖项</td>
+                        <td>中奖注数</td>
+                        <td>每注奖金</td>
+                        <td>中奖条件</td>
+                    </tr>
+                    <tr>
+                        <td>一等奖</td>
+                        <td>#</td>
+                        <td>####</td>
+                        <td><em class="text-red">6</em>+<em class="text-blue">1</em></td>
+                    </tr>
+                    <tr>
+                        <td>二等奖</td>
+                        <td>##</td>
+                        <td>####</td>
+                        <td><em class="text-red">6</em>+<em class="text-blue">0</em></td>
+                    </tr>
+                    <tr>
+                        <td>三等奖</td>
+                        <td>##</td>
+                        <td>3000</td>
+                        <td><em class="text-red">5</em>+<em class="text-blue">1</em></td>
+                    </tr>
+                    <tr>
+                        <td>四等奖</td>
+                        <td>##</td>
+                        <td>200</td>
+                        <td><em class="text-red">5</em>+<em class="text-blue">0</em>/<em class="text-red">4</em>+<em class="text-blue">1</em></td>
+                    </tr>
+                    <tr>
+                        <td>五等奖</td>
+                        <td>##</td>
+                        <td>10</td>
+                        <td><em class="text-red">4</em>+<em class="text-blue">0</em>/<em class="text-red">3</em>+<em class="text-blue">1</em></td>
+                    </tr>
+                    <tr>
+                        <td>六等奖</td>
+                        <td>##</td>
+                        <td>5</td>
+                        <td><em class="text-red">2</em>+<em class="text-blue">1</em>/<em class="text-red">1</em>+<em class="text-blue">1</em>/<em class="text-red">0</em>+<em class="text-blue">1</em></td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </dd>
+        <dd>
+            <p>第201698期&emsp;2016-28-23(周二)</p>
+            <p>
+                <em class="smallRedball">01</em>
+                <em class="smallRedball">02</em>
+                <em class="smallRedball">03</em>
+                <em class="smallRedball">04</em>
+                <em class="smallRedball">05</em>
+                <em class="smallRedball">06</em>
+                <em class="smallBlueball">07</em>
+                <i class="icon icon-angle-right"></i>
+            </p>
+            <div class="awardDetail">
+                <table class="detailTable table table-bordered">
+                    <tbody>
+                    <tr>
+                        <td>本期销量</td>
+                        <td>奖池滚存</td>
+                    </tr>
+                    <tr>
+                        <!--销量 & 奖池-->
+                        <td class="sales">99999999</td>
+                        <td class="jackpot">99999999</td>
+                    </tr>
+                    </tbody>
+                </table>
+                <table class="detailTable table table-bordered">
+                    <tbody>
+                    <tr>
+                        <td>奖项</td>
+                        <td>中奖注数</td>
+                        <td>每注奖金</td>
+                        <td>中奖条件</td>
+                    </tr>
+                    <tr>
+                        <td>一等奖</td>
+                        <td>#</td>
+                        <td>####</td>
+                        <td><em class="text-red">6</em>+<em class="text-blue">1</em></td>
+                    </tr>
+                    <tr>
+                        <td>二等奖</td>
+                        <td>##</td>
+                        <td>####</td>
+                        <td><em class="text-red">6</em>+<em class="text-blue">0</em></td>
+                    </tr>
+                    <tr>
+                        <td>三等奖</td>
+                        <td>##</td>
+                        <td>3000</td>
+                        <td><em class="text-red">5</em>+<em class="text-blue">1</em></td>
+                    </tr>
+                    <tr>
+                        <td>四等奖</td>
+                        <td>##</td>
+                        <td>200</td>
+                        <td><em class="text-red">5</em>+<em class="text-blue">0</em>/<em class="text-red">4</em>+<em class="text-blue">1</em></td>
+                    </tr>
+                    <tr>
+                        <td>五等奖</td>
+                        <td>##</td>
+                        <td>10</td>
+                        <td><em class="text-red">4</em>+<em class="text-blue">0</em>/<em class="text-red">3</em>+<em class="text-blue">1</em></td>
+                    </tr>
+                    <tr>
+                        <td>六等奖</td>
+                        <td>##</td>
+                        <td>5</td>
+                        <td><em class="text-red">2</em>+<em class="text-blue">1</em>/<em class="text-red">1</em>+<em class="text-blue">1</em>/<em class="text-red">0</em>+<em class="text-blue">1</em></td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </dd>
+        <dd>
+            <p>第201698期&emsp;2016-28-23(周二)</p>
+            <p>
+                <em class="smallRedball">01</em>
+                <em class="smallRedball">02</em>
+                <em class="smallRedball">03</em>
+                <em class="smallRedball">04</em>
+                <em class="smallRedball">05</em>
+                <em class="smallRedball">06</em>
+                <em class="smallBlueball">07</em>
+                <i class="icon icon-angle-right"></i>
+            </p>
+            <div class="awardDetail">
+                <table class="detailTable table table-bordered">
+                    <tbody>
+                    <tr>
+                        <td>本期销量</td>
+                        <td>奖池滚存</td>
+                    </tr>
+                    <tr>
+                        <!--销量 & 奖池-->
+                        <td class="sales">99999999</td>
+                        <td class="jackpot">99999999</td>
+                    </tr>
+                    </tbody>
+                </table>
+                <table class="detailTable table table-bordered">
+                    <tbody>
+                    <tr>
+                        <td>奖项</td>
+                        <td>中奖注数</td>
+                        <td>每注奖金</td>
+                        <td>中奖条件</td>
+                    </tr>
+                    <tr>
+                        <td>一等奖</td>
+                        <td>#</td>
+                        <td>####</td>
+                        <td><em class="text-red">6</em>+<em class="text-blue">1</em></td>
+                    </tr>
+                    <tr>
+                        <td>二等奖</td>
+                        <td>##</td>
+                        <td>####</td>
+                        <td><em class="text-red">6</em>+<em class="text-blue">0</em></td>
+                    </tr>
+                    <tr>
+                        <td>三等奖</td>
+                        <td>##</td>
+                        <td>3000</td>
+                        <td><em class="text-red">5</em>+<em class="text-blue">1</em></td>
+                    </tr>
+                    <tr>
+                        <td>四等奖</td>
+                        <td>##</td>
+                        <td>200</td>
+                        <td><em class="text-red">5</em>+<em class="text-blue">0</em>/<em class="text-red">4</em>+<em class="text-blue">1</em></td>
+                    </tr>
+                    <tr>
+                        <td>五等奖</td>
+                        <td>##</td>
+                        <td>10</td>
+                        <td><em class="text-red">4</em>+<em class="text-blue">0</em>/<em class="text-red">3</em>+<em class="text-blue">1</em></td>
+                    </tr>
+                    <tr>
+                        <td>六等奖</td>
+                        <td>##</td>
+                        <td>5</td>
+                        <td><em class="text-red">2</em>+<em class="text-blue">1</em>/<em class="text-red">1</em>+<em class="text-blue">1</em>/<em class="text-red">0</em>+<em class="text-blue">1</em></td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </dd>
+        <dd>
+            <p>第201698期&emsp;2016-28-23(周二)</p>
+            <p>
+                <em class="smallRedball">01</em>
+                <em class="smallRedball">02</em>
+                <em class="smallRedball">03</em>
+                <em class="smallRedball">04</em>
+                <em class="smallRedball">05</em>
+                <em class="smallRedball">06</em>
+                <em class="smallBlueball">07</em>
+                <i class="icon icon-angle-right"></i>
+            </p>
+            <div class="awardDetail">
+                <table class="detailTable table table-bordered">
+                    <tbody>
+                    <tr>
+                        <td>本期销量</td>
+                        <td>奖池滚存</td>
+                    </tr>
+                    <tr>
+                        <!--销量 & 奖池-->
+                        <td class="sales">99999999</td>
+                        <td class="jackpot">99999999</td>
+                    </tr>
+                    </tbody>
+                </table>
+                <table class="detailTable table table-bordered">
+                    <tbody>
+                    <tr>
+                        <td>奖项</td>
+                        <td>中奖注数</td>
+                        <td>每注奖金</td>
+                        <td>中奖条件</td>
+                    </tr>
+                    <tr>
+                        <td>一等奖</td>
+                        <td>#</td>
+                        <td>####</td>
+                        <td><em class="text-red">6</em>+<em class="text-blue">1</em></td>
+                    </tr>
+                    <tr>
+                        <td>二等奖</td>
+                        <td>##</td>
+                        <td>####</td>
+                        <td><em class="text-red">6</em>+<em class="text-blue">0</em></td>
+                    </tr>
+                    <tr>
+                        <td>三等奖</td>
+                        <td>##</td>
+                        <td>3000</td>
+                        <td><em class="text-red">5</em>+<em class="text-blue">1</em></td>
+                    </tr>
+                    <tr>
+                        <td>四等奖</td>
+                        <td>##</td>
+                        <td>200</td>
+                        <td><em class="text-red">5</em>+<em class="text-blue">0</em>/<em class="text-red">4</em>+<em class="text-blue">1</em></td>
+                    </tr>
+                    <tr>
+                        <td>五等奖</td>
+                        <td>##</td>
+                        <td>10</td>
+                        <td><em class="text-red">4</em>+<em class="text-blue">0</em>/<em class="text-red">3</em>+<em class="text-blue">1</em></td>
+                    </tr>
+                    <tr>
+                        <td>六等奖</td>
+                        <td>##</td>
+                        <td>5</td>
+                        <td><em class="text-red">2</em>+<em class="text-blue">1</em>/<em class="text-red">1</em>+<em class="text-blue">1</em>/<em class="text-red">0</em>+<em class="text-blue">1</em></td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </dd>
+        <dd>
+            <p>第201698期&emsp;2016-28-23(周二)</p>
+            <p>
+                <em class="smallRedball">01</em>
+                <em class="smallRedball">02</em>
+                <em class="smallRedball">03</em>
+                <em class="smallRedball">04</em>
+                <em class="smallRedball">05</em>
+                <em class="smallRedball">06</em>
+                <em class="smallBlueball">07</em>
+                <i class="icon icon-angle-right"></i>
+            </p>
+            <div class="awardDetail">
+                <table class="detailTable table table-bordered">
+                    <tbody>
+                    <tr>
+                        <td>本期销量</td>
+                        <td>奖池滚存</td>
+                    </tr>
+                    <tr>
+                        <!--销量 & 奖池-->
+                        <td class="sales">99999999</td>
+                        <td class="jackpot">99999999</td>
+                    </tr>
+                    </tbody>
+                </table>
+                <table class="detailTable table table-bordered">
+                    <tbody>
+                    <tr>
+                        <td>奖项</td>
+                        <td>中奖注数</td>
+                        <td>每注奖金</td>
+                        <td>中奖条件</td>
+                    </tr>
+                    <tr>
+                        <td>一等奖</td>
+                        <td>#</td>
+                        <td>####</td>
+                        <td><em class="text-red">6</em>+<em class="text-blue">1</em></td>
+                    </tr>
+                    <tr>
+                        <td>二等奖</td>
+                        <td>##</td>
+                        <td>####</td>
+                        <td><em class="text-red">6</em>+<em class="text-blue">0</em></td>
+                    </tr>
+                    <tr>
+                        <td>三等奖</td>
+                        <td>##</td>
+                        <td>3000</td>
+                        <td><em class="text-red">5</em>+<em class="text-blue">1</em></td>
+                    </tr>
+                    <tr>
+                        <td>四等奖</td>
+                        <td>##</td>
+                        <td>200</td>
+                        <td><em class="text-red">5</em>+<em class="text-blue">0</em>/<em class="text-red">4</em>+<em class="text-blue">1</em></td>
+                    </tr>
+                    <tr>
+                        <td>五等奖</td>
+                        <td>##</td>
+                        <td>10</td>
+                        <td><em class="text-red">4</em>+<em class="text-blue">0</em>/<em class="text-red">3</em>+<em class="text-blue">1</em></td>
+                    </tr>
+                    <tr>
+                        <td>六等奖</td>
+                        <td>##</td>
+                        <td>5</td>
+                        <td><em class="text-red">2</em>+<em class="text-blue">1</em>/<em class="text-red">1</em>+<em class="text-blue">1</em>/<em class="text-red">0</em>+<em class="text-blue">1</em></td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </dd>
+    </dl>
+
+</main>
+
+<!--尾部-->
+<footer class="footer">
+    <button class="btn">七乐彩投注</button>
+</footer>
+<!-- ZUI Javascript 依赖 jQuery -->
+<script src="./node_modules/zui/dist/lib/jquery/jquery.js"></script>
+<!-- ZUI 标准版压缩后的 JavaScript 文件 -->
+<script src="./node_modules/zui/dist/js/zui.min.js"></script>
+<!--引入页面js动画代码-->
+<script src="./js/lotteryInfoAnimation.js"></script>
+</body>
+</html>

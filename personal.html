@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--视口设置-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- ZUI 标准版压缩后的 CSS 文件 -->
+    <link rel="stylesheet" href="./node_modules/zui/dist/css/zui.min.css">
+    <title>三堂彩</title>
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/personal.css">
+</head>
+<body>
+<!--头部-->
+<header>
+    <p>个人中心</p>
+</header>
+<!--主体内容-->
+<main class="main">
+    <section class="person">
+        <div class="person-info">
+            <img src="./images/default_figure.png" alt="头像">
+            <span class="person-info-name">你好，1133456644</span>
+        </div>
+        <div class="person-money clearfix">
+            <span class="pull-left">可用余额:xxx</span>
+            <span class="pull-right">可提余额:xxx</span>
+        </div>
+    </section>
+    <!--充值、提现-->
+    <section class="money-operation">
+        <span>
+            <span class="btn " type="button" onclick="location.href='./withdrawals.html'">提款</span>
+        </span>
+        <span>
+            <span class="btn " type="button" onclick="location.href='./recharge.html'">充值</span>
+        </span>
+    </section>
+
+    <section class="person-list">
+        <ul>
+            <li>
+                <img src="./images/u39.png" alt="">
+                <span>购彩记录</span>
+                <i class="icon icon-angle-right icon-2x"></i>
+            </li>
+            <li>
+                <img src="./images/u39.png" alt="">
+                <span>追号记录</span>
+                <i class="icon icon-angle-right  icon-2x"></i>
+            </li>
+            <li>
+                <img src="./images/u39.png" alt="">
+                <span>账户明细</span>
+                <i class="icon icon-angle-right  icon-2x"></i>
+            </li>
+            <li>
+                <img src="./images/u39.png" alt="">
+                <span>个人资料</span>
+                <i class="icon icon-angle-right  icon-2x"></i>
+            </li>
+            <li>
+                <img src="./images/u39.png" alt="">
+                <span>更多</span>
+                <i class="icon icon-angle-right  icon-2x"></i>
+            </li>
+        </ul>
+    </section>
+</main>
+<!--尾部-->
+<footer class="tab-bar">
+    <ul class="clearfix">
+        <li onclick="location.href='./index.html'"><img src="./images/tab_hall_normal.png" alt="首页"></li>
+        <li onclick="location.href='./lotteryInformation.html'"><img src="./images/tab_award_normal.png" alt="开奖"></li>
+        <li><img src="./images/tab_mine_pressed.png" alt="我的"></li>
+    </ul>
+</footer>
+<!-- ZUI Javascript 依赖 jQuery -->
+<script src="./node_modules/zui/dist/lib/jquery/jquery.js"></script>
+<!-- ZUI 标准版压缩后的 JavaScript 文件 -->
+<script src="./node_modules/zui/dist/js/zui.min.js"></script>
+<script>
+    $(function () {
+        $('.person-list>ul').find('li').on('click', function(){
+            var index = $(this).index();
+            switch (index){
+                case 0:
+                    location.href='./lotteryRecord.html';
+                    break;
+                case 1:
+                    location.href='./zhuiHaoRecord.html';
+                    break;
+                case 2:
+                    location.href='./accountDetails.html';
+                    break;
+                case 3:
+                    location.href='./personalData.html';
+                    break;
+                case 4:
+                    location.href='./more.html';
+                    break;
+            }
+        })
+    });
+</script>
+</body>
+</html>

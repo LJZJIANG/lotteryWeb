@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--视口设置-->
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <!-- ZUI 标准版压缩后的 CSS 文件 -->
+    <link rel="stylesheet" href="./node_modules/zui/dist/css/zui.min.css">
+    <title>三堂彩</title>
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/personalCommon.css">
+    <style>
+        .wrapper{
+            background: #fff;
+            margin: 1rem 0 1.5rem;
+        }
+        p>a{
+            text-decoration: underline;
+            margin-left: 0.9rem;
+        }
+        .wrapper .form-control{
+            width: 55%;
+        }
+        .wrapper>div{
+            padding: 2rem 6rem;
+        }
+        .wrapper>div>button{
+            width: 40%;
+        }
+    </style>
+</head>
+<body>
+<!--头部-->
+<header>
+    <p>登录</p>
+</header>
+<!--主体内容-->
+<main class="wrapper">
+    <p>
+        <span>手机号</span>
+        <input type="password" class="form-control tel" placeholder="请输入手机号">
+    </p>
+    <p>
+        <span>密&emsp;码</span>
+        <input type="password" class="form-control password" placeholder="请输入密码"><a href="retrievePassword.html">忘记密码</a>
+    </p>
+    <div>
+        <button class="btn register pull-left">注册</button>
+        <button class="btn login pull-right">登录</button>
+    </div>
+</main>
+
+
+<!-- ZUI Javascript 依赖 jQuery -->
+<script src="./node_modules/zui/dist/lib/jquery/jquery.js"></script>
+<!-- ZUI 标准版压缩后的 JavaScript 文件 -->
+<script src="./node_modules/zui/dist/js/zui.min.js"></script>
+<script>
+    $(function () {
+        // 点击登录
+        $('.login').click(function () {
+            var tel = $('.tel').val();
+            var password = $('.password').val();
+            console.log(tel,password);
+            window.location.href = './personal.html';
+        })
+//        $close_2.on('click',function () {
+//            bankCard.val('');
+//            bankCard.focus();
+//        });
+        // 点击注册
+        $('.register').on('click',function () {
+            window.location.href = './register.html';
+        })
+    })
+
+</script>
+</body>
+</html>

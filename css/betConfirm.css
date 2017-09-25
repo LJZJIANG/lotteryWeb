@@ -1,0 +1,264 @@
+/*确认投注 样式*/
+span{
+    display: inline-block;
+}
+.wrapper{
+    background: #E7EFF0;
+    padding: .5rem 1rem;
+    margin-bottom: 8rem;
+    /*display: none;*/
+}
+.wrapper-title{
+    /*display: none;*/
+}
+
+.wrapper-title>span{
+    width: 50%;
+}
+.choose-agin>span{
+    padding: 0.2rem 0;
+    width: 50%;
+    text-align: center;
+    background: #fff;
+
+}
+a{
+    color: #353535;
+    text-decoration: none!important;
+}
+.my-choose-number{
+    background: #fff;
+    margin: .5rem 0;
+}
+.choose-list{
+    padding: .5rem 0 .2rem 3.5rem;
+    position: relative;
+    border-bottom: 1px dashed #535353;
+}
+.choose-list:last-of-type{
+    border-bottom: none;
+}
+.choose-list>dt>em{
+    display: inline-block;
+    color: #f00;
+    padding: 0 .3rem;
+}
+
+.choose-list>.icon{
+    position: absolute;
+    display: inline-block;
+    width: 1.5rem;
+    height: 1.5rem;
+    line-height: 1.5rem;
+    top: 1rem;
+}
+.icon-angle-right{
+    right: 1rem;
+    font-size: 1.2rem;
+    padding: 1rem 1rem 2rem 80%;
+    top: .5rem !important;
+}
+.icon-times{
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    text-align: center;
+    left: .5rem;
+    font-size: 1rem;
+}
+.footer{
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    background: #fff;
+    /*******/
+    /*display: none;*/
+}
+.remaining{
+    padding: .5rem 1rem;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+}
+.remaining>span{
+    margin-left: 1rem;
+    display: none;
+}
+.remaining>span>em{
+    color: #f00;
+}
+
+.remaining>em{
+    color: #f00;
+}
+.multiple-box>span{
+    width: 50%;
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+    padding: .5rem 0;
+    box-sizing: border-box;
+    float: left;
+}
+.multiple-box>span:first-of-type{
+    border-right: 1px solid #ccc;
+}
+.multiple-box>span>input{
+    display: inline-block;
+    width: 3rem;
+    text-align: center;
+    margin: 0 .5rem;
+    outline: 0;
+}
+.footer>div:last-of-type{
+    padding: 0 2rem;
+    text-align: center;
+}
+.footer .betinfo{
+    padding: .4rem;
+    position: relative;
+    top: 0;
+    left:0;
+}
+.info2{
+    display: none;
+}
+.footer>.stop-bet{
+    border-bottom:1px solid #ccc;
+    text-align: center;
+    padding: .3rem 0;
+    display: none;
+}
+
+/*****************************************智能选号****************************************************/
+.znzh-wrapper-title,.znzh-wrapper{
+    display: none;
+}
+.znzh-wrapper-title{
+    background: #E7EFF0;
+}
+.znzh-wrapper-title>span{
+    width: 50%;
+    padding-left: .5rem;
+}
+.znzh-wrapper .choose-agin>span{
+    padding: .2rem .5rem;
+    text-align: left;
+}
+.znzh-wrapper>p{
+    padding: 0 .5rem;
+}
+.choose-agin>span>input{
+    display: inline-block;
+    width: 3rem;
+    text-align: center;
+    margin: 0 .5rem;
+    outline: 0;
+    height: 1.7rem;
+}
+.table{
+    text-align: center;
+    margin-top: 5px;
+}
+.ratio>span{
+    width: 6rem;
+    margin: 0 auto;
+}
+.ratio>span>em{
+    display: inline-block;
+    width: 1.5rem;
+    height: 1.5rem;
+    border: 1px solid #ccc;
+    float: left;
+    background: #ccc;
+}
+.ratio>span>input{
+    display: inline-block;
+    width: 2.3rem;
+    height: 1.5rem;
+    float: left;
+    text-align: center;
+    outline: 0;
+}
+.znzh-footer{
+    text-align: center;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    background: #fff;
+    display: none;
+}
+.znzh-footer>p{
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+}
+.znzh-footer>div{
+    padding: 0 1rem;
+    height: 2rem;
+}
+.znzh-footer .betinfo{
+    padding: .4rem;
+}
+
+/*
+弹出框
+*/
+.prop-box{
+    display: none;
+}
+.prop-box1{
+    height: 100%;
+    top: 0;
+    position: absolute;
+    background: rgba(205,204,204,0.5);
+    z-index: 99;
+    width: 100%;
+    display: none;
+}
+.prompt-info{
+    width: 70%;
+    background: #fff;
+    margin: 50% auto;
+    text-align: center;
+}
+.prompt-info:last-of-type{
+    display: none;
+}
+.prompt-info:last-of-type>.prompt-info-head{
+    padding: 2rem 0;
+    color: #979797;
+}
+.prompt-info>.prompt-info-head{
+    color: #379C37;
+    font-weight: 600;
+    padding: 1rem;
+}
+.prompt-info-head>span{
+    width: 3rem;
+    height: 3rem;
+    line-height: 3rem;
+    font-size: 2rem;
+    border: 2px solid #379C37;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
+.prompt-info-bottom>a{
+    height: 3rem;
+    line-height: 3rem;
+    float: left;
+    width: 50%;
+    border-top: 1px solid #ccc;
+    box-sizing: border-box;
+}
+.prompt-info-bottom>a:first-child{
+    border-right: 1px solid #ccc;
+}
+.prop-box1 .my-choose-number{
+    background: #fff;
+    width: 85%;
+    z-index: 100;
+    margin: 30% auto;
+    padding: .5rem;
+}
+.my-choose-number>p>button{
+    display: block;
+    margin: 15px auto;
+    width: 30%;
+}

@@ -1,0 +1,158 @@
+/*清除zui默认样式*/
+body,html{
+    height: 100%;
+}
+p{
+    margin: 0;
+}
+
+.row{
+    margin: 0;
+}
+ul,dl{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+/*头部公共样式*/
+em{
+    font-style: normal;
+}
+.table{
+    margin-bottom: 0;
+}
+header{
+    height: 4rem;
+    border-bottom: 1px solid #ccc;
+    position: relative;
+}
+header p{
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    line-height: 4rem;
+}
+
+.back{
+    position: absolute;
+    display: inline-block;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    border: 2px solid #ccc;
+    left: 1rem;
+    top: calc(50% - 2.5rem/2);
+    text-align: center;
+}
+
+.back .icon{
+    position: absolute;
+    font-size: 2.4rem;
+    top: -.2rem;
+    left: 0.4rem;
+}
+
+/*尾部样式*/
+.tab-bar{
+    width:100%;
+    height: 4rem;
+    position: fixed;
+    border-top: 1px solid #ccc;
+    background-color: #fff;
+    bottom: 0;
+    z-index: 99;
+}
+.tab-bar ul{
+    padding-left: 0;
+}
+.tab-bar li{
+    list-style: none;
+    width: 33.33%;
+    line-height: 4rem;
+    text-align: center;
+    float: left;
+    font-size: 1.5rem;
+}
+.tab-bar li>img{
+    width: 5rem;
+}
+/*弹出框*/
+.container-box{
+    display: none;
+    position: absolute;
+    width:100%;
+    height: 100%;
+    background:rgba(201,201,201,0.4);
+    top:0;
+    left: 0;
+    z-index: 90;
+}
+.prompt{
+    position: absolute;
+    width: 20rem;
+    height: 20rem;
+    background: #fff;
+    top: calc(50% - 10rem);
+    left: calc(50% - 10rem);
+    text-align: center;
+    z-index: 99;
+}
+.prompt-top{
+    padding: 2rem;
+    border-bottom: 1px solid rgba(201,201,201,0.4);
+}
+.prompt-top>p{
+    font-size: 1.5rem;
+    color: #FF0057;
+    margin: .5rem  0 0 0 ;
+}
+.prompt-top img{
+    width: 5rem;
+}
+.prompt .btn{
+    margin-top: 1rem;
+}
+/*双色球 红蓝球样式*/
+.smallRedball,.smallBlueball{
+    display: inline-block;
+    width: 2rem;
+    height: 2rem;
+    font-size: 1.16rem;
+    line-height: 2rem;
+    -webkit-box-shadow: 0 0 0 1px #bc102d;
+    box-shadow: 0 0 0 1px #bc102d;
+    -webkit-border-radius: .916rem;
+    border-radius: .916rem;
+    text-align: center;
+    color: #bc102d;
+    margin: .4rem .625rem .4rem 0;
+}
+.smallBlueball{
+    box-shadow: 0 0 0 1px #0e52a7;
+    color: #0e52a7;
+}
+
+/*设置媒体查询*/
+@media only screen and (max-width: 376px) {
+    html{font-size: 12px !important;} /*手机小屏幕*/
+}
+@media only screen and (min-width: 376px) and (max-width: 480px) {
+    html{font-size: 14px !important;} /*手机中屏幕*/
+}
+@media only screen and (min-width: 481px) and (max-width: 540px) {
+    html{font-size: 16px !important;}/*手机大屏幕*/
+}
+@media only screen and (min-width: 541px) and (max-width: 768px){
+    html{font-size: 18px !important;}/*手机大屏幕*/
+}
+@media only screen and (min-width: 768px) and (max-width: 920px){
+    html{font-size: 20px !important;}/*pad屏幕*/
+}
+@media only screen and (min-width: 921px){
+    html{font-size: 22px !important;}/*PC屏幕*/
+}
+
+p,span,em,div,.btn,input,li,.form-control{
+    font-size: 1rem;
+}
+

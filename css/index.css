@@ -1,0 +1,111 @@
+.main{
+    margin-bottom: 4rem;
+}
+.main>a{
+    display: inline-block;
+    width: 50%;
+    height: 5.75rem;
+    float: left;
+    border-bottom: 1px solid rgba(238,235,218,.5);
+    position: relative;
+    color: #000;
+    text-decoration: none;
+}
+
+.hallList{
+    clear: both;
+    position: relative;
+    z-index: 9;
+    padding: 1rem 0;
+    margin: 0;
+}
+.hallList .logo{
+    width: 3.75rem;
+    height: 3.75rem;
+    background-size: 3.75rem 3.75rem;
+    position: absolute;
+    z-index: 10;
+    left: .83rem;
+    top: 1rem;
+}
+/*设置不同彩种的logo*/
+/*精彩足球*/
+.jczq{
+    background: url("../images/jczq@3x.png") no-repeat center;
+}
+/*精彩篮球*/
+.jclq{
+    background: url("../images/jclq@3x.png") no-repeat center;
+}
+/*双色球*/
+.ssq{
+    background: url("../images/ssq@3x.png") no-repeat center;
+}
+/*大乐透*/
+.dlt{
+    background: url("../images/dlt@2x.png") no-repeat center;
+}
+/*山东11选5*/
+.sd11xw{
+    background: url("../images/sdsyxw@3x.png") no-repeat center;
+}
+/*江西11选5*/
+.jx11xw{
+    background: url("../images/jxsyxw@3x.png") no-repeat center;
+}
+/*江西快三*/
+.jxk3{
+    background: url("../images/jxks@3x.png") no-repeat center;
+}
+/*任选9场*/
+.rxjc{
+    background: url("../images/rxj@3x.png") no-repeat center;
+}
+/*胜负彩*/
+.sfc{
+    background: url("../images/sfc@3x.png") no-repeat center;
+}
+/*3D*/
+.sd{
+    background: url("../images/sd@3x.png") no-repeat center;
+}
+/*排列3*/
+.pl3{
+    background: url("../images/pl3@3x.png") no-repeat center;
+}
+/*排列5*/
+.pl5{
+    background: url("../images/pl5@3x.png") no-repeat center;
+}
+/*七星彩*/
+.qxc{
+    background: url("../images/qxc@3x.png") no-repeat center;
+}
+/*七乐彩*/
+.qlc{
+    background: url("../images/qlc@3x.png") no-repeat center;
+}
+.hallList>dd{
+    margin-left: 5.3rem;
+    font-size: 1.25rem;
+    color: #333;
+    line-height: 2rem;
+    padding-bottom: .3rem;
+}
+/*.hallList>dd:nth-child(odd){*/
+    /*border-right: 1px solid #ccc;*/
+/*}*/
+.hallList .title{
+    font-size: 1.25rem;
+    margin: 0;
+    font-weight: 500;
+}
+.intro{
+    color: #cccccc;
+    margin: 0;
+}
+
+.red-border{
+    width: 6rem;
+    border: 1px solid #f00;
+}

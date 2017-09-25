@@ -1,0 +1,49 @@
+/*个人资料 css样式*/
+.wrapper>a{
+    display:block;
+    color: #353535;
+    text-decoration: none;
+}
+.wrapper div{
+    padding:0 1rem;
+    border-bottom: 1px solid #ccc;
+    height: 5rem;
+    line-height: 5rem;
+    box-sizing: border-box;
+}
+.person-info>img{
+    width: 4rem;
+    margin-right: 1.5rem;
+}
+.wrapper div>span{
+    display: inline-block;
+    line-height: 5rem;
+}
+/*修改昵称弹出框*/
+
+.prompt{
+    height: 18rem;
+    display: none;
+}
+.setting-box{
+    width: 24rem ;
+    left: calc(50% - 24rem/2);
+
+    height: 16rem;
+    display: block;
+}
+.setting-box>.prompt-top>p{
+    color: #353535;
+    margin-bottom: 20px;
+}
+.prompt-top>span{
+    width: 100%;
+    position: relative;
+}
+
+.setting-box span>em{
+    position: absolute;
+    right: 2%;
+    font-size: 1.4rem;
+    color: #ccc;
+}

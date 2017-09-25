@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--视口设置-->
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <!-- ZUI 标准版压缩后的 CSS 文件 -->
+    <link rel="stylesheet" href="./node_modules/zui/dist/css/zui.min.css">
+    <title>三堂彩</title>
+    <link rel="stylesheet" href="./css/common.css">
+    <style>
+        .wrapper>p{
+            border-bottom: 1px solid #cccccc;
+            height: 5rem;
+            line-height:5rem;
+            padding: 0 2rem;
+            position: relative;
+        }
+        .wrapper>p>span{
+            text-align: right;
+            width: 24%;
+            margin-right: 1rem;
+            display: inline-block;
+        }
+        .wrapper> .btn{
+            margin-top: 20px;
+            width: 25%;
+            margin-left: calc(50% - 25%/2);
+        }
+        .prompt1{
+            display: none;
+            height: 100%;
+            background: #fff;
+            text-align: center;
+        }
+        .prompt1>p{
+            font-size: 1.5rem;
+            color: #FF0057;
+            margin: 1.5rem;
+        }
+        .prompt1>img{
+            width: 5rem;
+        }
+        .title{
+            font-size: 1.5rem;
+            border-bottom: 2px solid #ccc;
+            height: 4rem;
+            line-height: 4rem;
+            margin-bottom: 3rem;
+        }
+
+        .confirm-box{
+            background: #fff;
+            width: 70%;
+            font-size: 1.5rem;
+            text-align: center;
+            margin: 45% auto 0;
+        }
+        .confirm-box>div{
+            border-bottom: 1px solid #ccc;
+            height: 7rem;
+            line-height:7rem;
+        }
+        .confirm-box>span{
+            display: inline-block;
+            width: 50%;
+            height: 4rem;
+            line-height: 4rem;
+        }
+        .cancel{
+            border-right: 1px solid #ccc;
+        }
+    </style>
+</head>
+<body>
+<!--头部-->
+<header>
+    <span class="back" onclick="window.history.back(-1);"><i class="icon icon-angle-left"></i></span>
+    <p>提款方式</p>
+</header>
+<!--主体内容-->
+<main class="wrapper">
+    <p>
+        <span>姓名:</span><em>陈**</em>
+    </p>
+    <p>
+        <span>银行类型:</span>
+        <em class="bank-type">工商银行</em>
+    </p>
+    <p>
+        <span>银行卡号:</span><em class="bank-card"></em>
+    </p>
+    <button class="btn">确认添加</button>
+</main>
+<!--点击提现后提示框-->
+<div class="container-box">
+    <div class="prompt1">
+        <div class="title">提款方式</div>
+        <img src="./images/u61.png" alt="">
+        <p>认证成功</p>
+        <button class="goback btn" type="button">返回</button>
+    </div>
+    <div class="confirm-box">
+        <div>确认绑定</div>
+        <span class="cancel">取消</span><span class="confirm">确认</span>
+    </div>
+</div>
+
+
+<!-- ZUI Javascript 依赖 jQuery -->
+<script src="./node_modules/zui/dist/lib/jquery/jquery.js"></script>
+<!-- ZUI 标准版压缩后的 JavaScript 文件 -->
+<script src="./node_modules/zui/dist/js/zui.min.js"></script>
+<script>
+    $(function () {
+//        var bankCard =localStorage.getItem('bankCard');// 从本地存储中获取上个页面存储的值
+        var bankCard = $.zui.store.get('bankCard');// 从本地存储中获取上个页面存储的值
+        $('.bank-card').html(bankCard);//将上页面存储的值设置到当前页面中
+
+        var bankCard = $('.bank-card');
+        var $conrainer_box = $('.container-box');
+        
+        $('.clear2').on('click',function () {
+            bankCard.val('');
+            bankCard.focus();
+        });
+        $('.btn').on('click',function () {
+            $conrainer_box.show();
+        })
+        $('.cancel').on('click',function () {
+            $conrainer_box.hide();
+        })
+        $('.confirm').on('click',function () {
+            $('.prompt1').show();
+            $('.confirm-box').hide();
+        })
+        $('.goback').on('click',function () {
+            location.href = './bankCardList.html';
+        })
+    })
+
+</script>
+</body>
+</html>

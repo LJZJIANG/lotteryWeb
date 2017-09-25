@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--视口设置-->
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <!-- ZUI 标准版压缩后的 CSS 文件 -->
+    <link rel="stylesheet" href="./node_modules/zui/dist/css/zui.min.css">
+    <title>三堂彩</title>
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/recordCommon.css">
+    <link rel="stylesheet" href="./css/zhuiHaoBettingDetails.css">
+    <style>
+        /*套餐未中奖返回金额 盒子*/
+        .prop-box{
+            border: 5px solid #f00;
+            border-radius: 7px;
+            width: 40%;
+            position: absolute;
+            top: 13%;
+            left: 35%;
+            text-align: center;
+            color: #f00;
+            font-size: 1.5rem;
+            font-weight: bold;
+            padding: .5rem;
+            transform: rotate(-20deg);
+            /*display: none;*/
+        }
+        .row>.btn{
+            display: block;
+            margin: 0.6rem auto;
+            width: 35%;
+        }
+    </style>
+</head>
+<body>
+<!--头部-->
+<header>
+    <span class="back" onclick="window.history.back(-1);"><i class="icon icon-angle-left"></i></span>
+    <p>投注详情</p>
+    <button class="share btn">分享</button>
+</header>
+<!--主体内容-->
+<main class="main">
+    <section class="wrap-box">
+        <img src="./images/sdsyxw@3x.png" alt="">
+        <span>
+            <p class="title">山东11选5</p>
+            <span class="bg-warning">套餐</span>
+        </span>
+        <img src="./images/u39.png" alt="" class="email">
+        <span class="pull-right">
+            <p>3/10</p>
+            <p class="bonus">奖金:￥888.88</p>
+        </span>
+    </section>
+    <p class="message">方案信息</p>
+    <section class="betting-info">
+        <p class="clearfix">
+            <span>投注金额：
+                <span class="betting-money">xx</span>
+                元
+            </span>
+            <span>中奖停追:<span>&nbsp;否&nbsp;(不中返xx)</span></span>
+        </p>
+        <p class="clearfix">
+            <span>投注时间:<sapn>08-22 22:15</sapn></span>
+            <span>订单编号: <span>xxxxxxxxx</span></span>
+        </p>
+
+    </section>
+    <div class="message bet-content" >
+        <span>投注内容</span>
+        <i class="icon icon-angle-down"></i>
+    </div>
+    <!--投注内容-->
+    <section class="betting-content" id="wrapper2">
+        <ul class="betting-content-list">
+            <li>
+                <span>1</span>
+                <span class="number-list">
+                    <span>1</span>
+                    <span>2</span>
+                    <span>3</span>
+                    <span>4</span>
+                    <p>任二普通-复式  6注  12元</p>
+                </span>
+            </li>
+            <li>
+                <span>1</span>
+                <span class="number-list">
+                    <span>1</span>
+                    <span>2</span>
+                    <span>3</span>
+                    <span>4</span>
+                    <p>任二普通-复式  6注  12元</p>
+                </span>
+            </li>
+            <li>
+                <span>1</span>
+                <span class="number-list">
+                    <span>1</span>
+                    <span>2</span>
+                    <span>3</span>
+                    <span>4</span>
+                    <p>任二普通-复式  6注  12元</p>
+                </span>
+            </li>
+            <li>
+                <span>1</span>
+                <span class="number-list">
+                    <span>1</span>
+                    <span>2</span>
+                    <span>3</span>
+                    <span>4</span>
+                    <p>任二普通-复式  6注  12元</p>
+                </span>
+            </li>
+            <li>
+                <span>1</span>
+                <span class="number-list">
+                    <span>1</span>
+                    <span>2</span>
+                    <span>3</span>
+                    <span>4</span>
+                    <p>任二普通-复式  6注  12元</p>
+                </span>
+            </li>
+            <li>
+                <span>1</span>
+                <span class="number-list">
+                    <span>1</span>
+                    <span>2</span>
+                    <span>3</span>
+                    <span>4</span>
+                    <p>任二普通-复式  6注  12元</p>
+                </span>
+            </li>
+        </ul>
+    </section>
+    <p class="message">追期详情</p>
+    <section class="buy-list">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>序号</th>
+                    <th>期号</th>
+                    <th>当期投入</th>
+                    <th>累计投入</th>
+                    <th>中奖奖金</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="not-winning-color">
+                    <td>1</td>
+                    <td>56期</td>
+                    <td>20元</td>
+                    <td>50元</td>
+                    <td>未中奖</td>
+                </tr>
+                <tr class="not-winning-color">
+                    <td>1</td>
+                    <td>56期</td>
+                    <td>20元</td>
+                    <td>50元</td>
+                    <td>未中奖</td>
+                </tr>
+                <tr class="not-winning-color">
+                    <td>2</td>
+                    <td>56期</td>
+                    <td>20元</td>
+                    <td>50元</td>
+                    <td>未中奖</td>
+                </tr>
+                <tr  class="wait-lottery-color">
+                    <td>3</td>
+                    <td>56期</td>
+                    <td>20元</td>
+                    <td>50元</td>
+                    <td>待开奖</td>
+                </tr>
+                <tr  class="wait-lottery-color">
+                    <td>4</td>
+                    <td>56期</td>
+                    <td>20元</td>
+                    <td>50元</td>
+                    <td>待开奖</td>
+                </tr>
+                <tr  class="wait-lottery-color">
+                    <td>5</td>
+                    <td>56期</td>
+                    <td>20元</td>
+                    <td>50元</td>
+                    <td>未中奖</td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>56期</td>
+                    <td>20元</td>
+                    <td>50元</td>
+                    <td>未中奖</td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>56期</td>
+                    <td>20元</td>
+                    <td>50元</td>
+                    <td>未中奖</td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td>56期</td>
+                    <td>20元</td>
+                    <td>50元</td>
+                    <td>未中奖</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    <!--底部-->
+    <footer class="footer">
+        <div class="row">
+            <button class="btn">11选5投注</button>
+        </div>
+        <div class="row share-list text-center">
+            <div class="col-sm-3 col-xs-3"><img src="./images/share_to_weixin.png" alt="微信"></div>
+            <div class="col-sm-3 col-xs-3"><img src="./images/share_to_pyq.png" alt="朋友圈"></div>
+            <div class="col-sm-3 col-xs-3"><img src="./images/share_to_qq.png" alt="QQ"></div>
+            <div class="col-sm-3 col-xs-3"><img src="./images/share_to_qzone.png" alt="QQ空间"></div>
+        </div>
+    </footer>
+</main>
+<div class="prop-box">
+    已返 ￥ <em>12000</em>
+</div>
+<!-- ZUI Javascript 依赖 jQuery -->
+<script src="./node_modules/zui/dist/lib/jquery/jquery.js"></script>
+<!-- ZUI 标准版压缩后的 JavaScript 文件 -->
+<script src="./node_modules/zui/dist/js/zui.min.js"></script>
+<script src="https://cdn.bootcss.com/iScroll/5.2.0/iscroll.min.js"></script>
+<script>
+    <!--实现页面的局部滑动-->
+    myScroll1 = new IScroll('#wrapper2', {
+        mouseWheel: true,
+        scrollbars: true
+    });
+</script>
+<script>
+    $(function () {
+//        定义标记 ，判断是否点击分享
+        var flag = true;
+        var $btn = $('.footer>.row');
+        var $share_list = $('.footer>.share-list');
+        $('.share').on('click',function () {
+            if(flag){
+                $btn.hide();
+                $share_list.show();
+                flag =false;
+            }else{
+                $btn.show();
+                $share_list.hide();
+                flag =true;
+            }
+        })
+
+//        点击投注内容，显示与隐藏具体信息
+        var $more = $('.message>.icon');
+//        投注内容容器
+        var $betting_content = $('.betting-content');
+        $betting_content.css('display','none');
+        var isShow = false;
+        $('.bet-content').on('click',function () {
+            if(!isShow){
+                $more.removeClass('icon-angle-down').addClass('icon-angle-up');
+                $betting_content.slideDown();
+                isShow=true;
+            }else{
+                $more.removeClass('icon-angle-up').addClass('icon-angle-down');
+                $betting_content.slideUp();
+                isShow=false;
+            }
+        })
+    })
+</script>
+<!--局部滑动设置-->
+<!--<script>-->
+    <!--$(function () {-->
+        <!--setTimeout(function () {-->
+            <!--var wrapper = document.getElementById('wrapper');-->
+            <!--var myScroll = new iScroll(wrapper,{mouseWheel: true,-->
+                <!--scrollbars: true});-->
+        <!--},200);-->
+    <!--})-->
+<!--</script>-->
+</body>
+</html>

@@ -1,0 +1,84 @@
+/*
+提款界面 css样式
+*/
+
+/*银行卡列表*/
+.card-list{
+    padding:0.5rem 1.5rem;
+    background-color: #fcfcfc;
+    position: relative;
+}
+
+.card-info{
+    padding: 1rem;
+    color: #fff;
+}
+.card-info>dl{
+    background: #c65055;
+    width: 88%;
+    border-radius: 10px;
+    padding: .5rem 1rem .5rem 6rem;
+    box-sizing: border-box;
+    margin: 0 auto 10px;
+    position: relative;
+}
+dl>img{
+    width: 4rem;
+    height: 4rem;
+    position: absolute;
+    left: 1rem;
+    top: 0.5rem;
+    background: #c65055;
+}
+
+.more-card{
+    display: block;
+    margin-top: 1.5rem;
+    width: 2rem;
+    margin-left: calc(50% - 1rem);
+}
+
+.more-card i{
+    font-size: 26px;
+}
+
+.withdrawal-box{
+    border-bottom: 1px solid #ccc;
+    padding: 1rem 3rem 0.5rem;
+}
+
+.withdrawal-box .number{
+    outline: none;
+    border: 0;
+    font-size: 2rem;
+    width: 60%;
+}
+
+.withdrawal-box p{
+margin-bottom: 0.2rem;
+}
+
+.withdrawal-money span{
+    margin-right: 0.8rem;
+    font-size: 2.5rem;
+}
+
+.withdrawal-money-text{
+    color: #aeaeae;
+    text-indent: 3rem;
+    padding: 0.5rem 0;
+}
+
+/*尾部样式*/
+/*footer{*/
+    /*background: #fcfcfc;*/
+/*}*/
+
+.withdrawal-btn{
+    width: 8rem;
+    height: 3rem;
+    margin-left: calc(50% - 4rem);
+    margin-top: 5rem;
+    font-size: 1.4rem;
+}
+

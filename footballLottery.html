@@ -1,0 +1,830 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--视口设置-->
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <!-- ZUI 标准版压缩后的 CSS 文件 -->
+    <link rel="stylesheet" href="./node_modules/zui/dist/css/zui.min.css">
+    <title>三堂彩</title>
+    <link rel="stylesheet" href="./css/common.css">
+    <!-- 引入 开奖信息页面公共样式-->
+    <link rel="stylesheet" href="./css/footerCommon.css">
+    <link rel="stylesheet" href="./css/footballLottery.css">
+</head>
+<body>
+<!--头部-->
+<header>
+	<span class="back" onclick="window.history.back(-1);">
+		<i class="icon icon-angle-left"></i>
+	</span>
+    <select class="choose-lottery form-control">
+        <option value="0">混合投注</option>
+        <option value="1">胜平负</option>
+        <option value="2">让球胜平负</option>
+        <option value="3">比分</option>
+        <option value="4">总进球</option>
+        <option value="5">半全场</option>
+    </select>
+    <span class="screen">筛</span>
+    <i class="icon icon-bars icon-2x"></i>
+</header>
+<p class="lottery-title"><span>2016-06-10</span><span>星期三</span><span>9场可投</span></p>
+<!--主体内容-->
+<main class="main">
+    <!--混合投注-->
+    <div class="mixed-betting-box">
+        <div class="mixed-betting">
+            <div class="mixed-betting-left">
+                <p>周三301</p>
+                <p>NBA</p>
+                <p><span class="last-time">11:15</span>  截止</p>
+            </div>
+            <div class="mixed-betting-right">
+                <p><span>马刺</span>(客)&emsp;vs&emsp;<span>快船</span>(主)</p>
+                <table class="table table-bordered table-condensed">
+                    <tr>
+                        <td>
+                            <p>客胜</p>
+                            <p>1.40</p>
+                        </td>
+                        <td>
+                            <p>客 <span>+1.5</span>胜</p>
+                            <p>1.40</p>
+                        </td>
+                        <td class="more-method" rowspan="2">更多 <br>玩法</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>客胜</p>
+                            <p>1.40</p>
+                        </td>
+                        <td>
+                            <p>客胜</p>
+                            <p>1.40</p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="mixed-betting">
+            <div class="mixed-betting-left">
+                <p>周三301</p>
+                <p>NBA</p>
+                <p><span class="last-time">11:15</span>  截止</p>
+            </div>
+            <div class="mixed-betting-right">
+                <p><span>马刺</span>(客)&emsp;vs&emsp;<span>快船</span>(主)</p>
+                <table class="table table-bordered table-condensed">
+                    <tr>
+                        <td>
+                            <p>客胜</p>
+                            <p>1.40</p>
+                        </td>
+                        <td>
+                            <p>客 <span>+1.5</span>胜</p>
+                            <p>1.40</p>
+                        </td>
+                        <td class="more-method" rowspan="2">更多 <br>玩法</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>客胜</p>
+                            <p>1.40</p>
+                        </td>
+                        <td>
+                            <p>客胜</p>
+                            <p>1.40</p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="mixed-betting">
+            <div class="mixed-betting-left">
+                <p>周三301</p>
+                <p>NBA</p>
+                <p><span class="last-time">11:15</span>  截止</p>
+            </div>
+            <div class="mixed-betting-right">
+                <p><span>马刺</span>(客)&emsp;vs&emsp;<span>快船</span>(主)</p>
+                <table class="table table-bordered table-condensed">
+                    <tr>
+                        <td>
+                            <p>客胜</p>
+                            <p>1.40</p>
+                        </td>
+                        <td>
+                            <p>客 <span>+1.5</span>胜</p>
+                            <p>1.40</p>
+                        </td>
+                        <td class="more-method" rowspan="2">更多 <br>玩法</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>客胜</p>
+                            <p>1.40</p>
+                        </td>
+                        <td>
+                            <p>客胜</p>
+                            <p>1.40</p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    <!--胜负平-->
+    <div class="sheng-fu-box">
+        <div class="sheng-fu mixed-betting">
+            <div class="mixed-betting-left">
+                <p>周三301</p>
+                <p>NBA</p>
+                <p><span class="last-time">11:15</span>  截止</p>
+            </div>
+            <div class="mixed-betting-right">
+                <p><span>马刺</span>(客)&emsp;vs&emsp;<span>快船</span>(主)</p>
+                <table class="table table-bordered table-condensed">
+                    <tr>
+                        <td>
+                            <p>负</p>
+                            <p>1.40</p>
+                        </td>
+                        <td>
+                            <p>胜</p>
+                            <p>1.40</p>
+                        </td>
+                        <td>
+                            <p>胜</p>
+                            <p>1.40</p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    <!--让球胜平负-->
+    <div class="rqspf-box">
+        <div class="rqspf mixed-betting">
+            <div class="mixed-betting-left">
+                <p>周三301</p>
+                <p>NBA</p>
+                <p><span class="last-time">11:15</span>  截止</p>
+            </div>
+            <div class="mixed-betting-right">
+                <p><span>马刺</span>(客)&emsp;vs&emsp;<span>快船</span>(主)</p>
+                <table class="table table-bordered table-condensed">
+                    <tr>
+                        <td>
+                            <p>主<span>+1.5</span>胜</p>
+                            <p>1.40</p>
+                        </td>
+                        <td>
+                            <p>胜</p>
+                            <p>1.40</p>
+                        </td>
+                        <td>
+                            <p>胜</p>
+                            <p>1.40</p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    <!--比分-->
+    <div class="score-box">
+        <div class="score mixed-betting">
+            <div class="mixed-betting-left">
+                <p>周三301</p>
+                <p>NBA</p>
+                <p><span class="last-time">11:15</span>  截止</p>
+            </div>
+            <div class="mixed-betting-right">
+                <p><span>马刺</span>(客)&emsp;vs&emsp;<span>快船</span>(主)</p>
+                <button class="btn">点击展开比分投注区</button>
+            </div>
+        </div>
+        <div class="score mixed-betting">
+            <div class="mixed-betting-left">
+                <p>周三301</p>
+                <p>NBA</p>
+                <p><span class="last-time">11:15</span>  截止</p>
+            </div>
+            <div class="mixed-betting-right">
+                <p><span>马刺</span>(客)&emsp;vs&emsp;<span>快船</span>(主)</p>
+                <button class="btn">点击展开比分投注区</button>
+            </div>
+        </div>
+        <div class="score mixed-betting">
+            <div class="mixed-betting-left">
+                <p>周三301</p>
+                <p>NBA</p>
+                <p><span class="last-time">11:15</span>  截止</p>
+            </div>
+            <div class="mixed-betting-right">
+                <p><span>马刺</span>(客)&emsp;vs&emsp;<span>快船</span>(主)</p>
+                <button class="btn">点击展开比分投注区</button>
+            </div>
+        </div>
+
+    </div>
+    <!--总进球-->
+    <div class="zjq-box">
+        <div class="zjq mixed-betting">
+            <div class="mixed-betting-left">
+                <p>周三301</p>
+                <p>NBA</p>
+                <p><span class="last-time">11:15</span>  截止</p>
+            </div>
+            <div class="mixed-betting-right">
+                <p><span>马刺</span>(客)&emsp;vs&emsp;<span>快船</span>(主)</p>
+                <table class="table table-bordered table-condensed">
+                    <tr>
+                        <td>
+                            <p>0球</p>
+                            <p>1.40</p>
+                        </td>
+                        <td>
+                            <p>1球</p>
+                            <p>1.40</p>
+                        </td>
+                        <td>
+                            <p>2球</p>
+                            <p>1.40</p>
+                        </td>
+                        <td>
+                            <p>3球</p>
+                            <p>1.40</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>0球</p>
+                            <p>1.40</p>
+                        </td>
+                        <td>
+                            <p>1球</p>
+                            <p>1.40</p>
+                        </td>
+                        <td>
+                            <p>2球</p>
+                            <p>1.40</p>
+                        </td>
+                        <td>
+                            <p>3球</p>
+                            <p>1.40</p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    <!--半全场-->
+    <div class="bqc-box">
+        <div class="bqc mixed-betting">
+            <div class="mixed-betting-left">
+                <p>周三301</p>
+                <p>NBA</p>
+                <p><span class="last-time">11:15</span>  截止</p>
+            </div>
+            <div class="mixed-betting-right">
+                <p><span>马刺</span>(客)&emsp;vs&emsp;<span>快船</span>(主)</p>
+                <button class="btn">点击展开比分投注区</button>
+            </div>
+        </div>
+
+    </div>
+</main>
+<!-- 小对话框 -->
+<!--<div class="panel panel-danger prop-panel">-->
+    <!--您还未投注-->
+<!--</div>-->
+<!--尾部-->
+<footer class="footer">
+    <!--<p class="show-or-hide">若中奖:奖金 <em class="bonus"></em>，<span>盈利</span>  <em class="profit"></em></p>-->
+    <div class="clearfix">
+        <button class="btn clear-bar pull-left">清空</button>
+        <span class="">已选择 <em class="count">0</em> 场比赛</span><br>
+        <span>页面赔率仅供参考&emsp;请以出票为准</span>
+        <button class="btn confirm pull-right btn-primary">确定</button>
+    </div>
+</footer>
+<!--弹出层-->
+<section class="container-box">
+    <!--混合投注弹出层-->
+    <div class="mixed-betting-prop panel">
+        <p><span>马刺</span>(客)&emsp;vs&emsp;<span>快船</span>(主)</p>
+        <div class="table-box">
+            <table class="table table-bordered table-condensed">
+                <tr>
+                    <td class="left-menu">
+                        非让
+                    </td>
+                    <td>
+                        <p>胜</p>
+                        <p>1.40</p>
+                    </td>
+                    <td>
+                        <p>平</p>
+                        <p>1.40</p>
+                    </td>
+                    <td>
+                        <p>负</p>
+                        <p>1.40</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="left-menu">
+                        让球
+                    </td>
+                    <td>
+                        <p>胜</p>
+                        <p>1.40</p>
+                    </td>
+                    <td>
+                        <p>平</p>
+                        <p>1.40</p>
+                    </td>
+                    <td>
+                        <p>负</p>
+                        <p>1.40</p>
+                    </td>
+                </tr>
+            </table>
+            <table class="table table-bordered table-condensed">
+                <tr>
+                    <td class="left-menu" rowspan="7">
+                        比分
+                    </td>
+                    <td>
+                        <p>1:0</p>
+                        <p>1.40</p>
+                    </td>
+                    <td>
+                        <p>平</p>
+                        <p>1.40</p>
+                    </td>
+                    <td>
+                        <p>负</p>
+                        <p>1.40</p>
+                    </td>
+                    <td>
+                        <p>1:0</p>
+                        <p>1.40</p>
+                    </td>
+                    <td>
+                        <p>1:0</p>
+                        <p>1.40</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>1:0</p>
+                        <p>1.40</p>
+                    </td>
+                    <td>
+                        <p>平</p>
+                        <p>1.40</p>
+                    </td>
+                    <td>
+                        <p>负</p>
+                        <p>1.40</p>
+                    </td>
+                    <td>
+                        <p>1:0</p>
+                        <p>1.40</p>
+                    </td>
+                    <td>
+                        <p>1:0</p>
+                        <p>1.40</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>1:0</p>
+                        <p>1.40</p>
+                    </td>
+                    <td>
+                        <p>平</p>
+                        <p>1.40</p>
+                    </td>
+                    <td colspan="3">
+                        <p>胜其他</p>
+                        <p>1.40</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>1:0</p>
+                        <p>1.40</p>
+                    </td>
+                    <td>
+                        <p>平</p>
+                        <p>1.40</p>
+                    </td>
+                    <td>
+                        <p>负</p>
+                        <p>1.40</p>
+                    </td>
+                    <td>
+                        <p>1:0</p>
+                        <p>1.40</p>
+                    </td>
+                    <td>
+                        <p>平其他</p>
+                        <p>1.40</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>1:0</p>
+                        <p>1.40</p>
+                    </td>
+                    <td>
+                        <p>平</p>
+                        <p>1.40</p>
+                    </td>
+                    <td>
+                        <p>负</p>
+                        <p>1.40</p>
+                    </td>
+                    <td>
+                        <p>1:0</p>
+                        <p>1.40</p>
+                    </td>
+                    <td>
+                        <p>1:0</p>
+                        <p>1.40</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>1:0</p>
+                        <p>1.40</p>
+                    </td>
+                    <td>
+                        <p>平</p>
+                        <p>1.40</p>
+                    </td>
+                    <td>
+                        <p>负</p>
+                        <p>1.40</p>
+                    </td>
+                    <td>
+                        <p>1:0</p>
+                        <p>1.40</p>
+                    </td>
+                    <td>
+                        <p>1:0</p>
+                        <p>1.40</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>1:0</p>
+                        <p>1.40</p>
+                    </td>
+                    <td>
+                        <p>平</p>
+                        <p>1.40</p>
+                    </td>
+                    <td colspan="3">
+                        <p>负其他</p>
+                        <p>1.40</p>
+                    </td>
+                </tr>
+            </table>
+            <table class="table table-bordered table-condensed">
+                <tr>
+                    <td class="left-menu" rowspan="2">
+                        总进球
+                    </td>
+                    <td>
+                        <p>1:0</p>
+                        <p>1.40</p>
+                    </td>
+                    <td>
+                        <p>平</p>
+                        <p>1.40</p>
+                    </td>
+                    <td>
+                        <p>负</p>
+                        <p>1.40</p>
+                    </td>
+                    <td>
+                        <p>1:0</p>
+                        <p>1.40</p>
+                    </td>
+                    <td>
+                        <p>1:0</p>
+                        <p>1.40</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>1:0</p>
+                        <p>1.40</p>
+                    </td>
+                    <td>
+                        <p>平</p>
+                        <p>1.40</p>
+                    </td>
+                    <td colspan="3">
+                        <p>7+球</p>
+                        <p>1.40</p>
+                    </td>
+                </tr>
+            </table>
+            <table class="table table-bordered table-condensed">
+                <tr>
+                    <td class="left-menu" rowspan="2">
+                        总进球
+                    </td>
+                    <td>
+                        <p>胜胜</p>
+                        <p>1.40</p>
+                    </td>
+                    <td>
+                        <p>胜平</p>
+                        <p>1.40</p>
+                    </td>
+                    <td>
+                        <p>胜负</p>
+                        <p>1.40</p>
+                    </td>
+                    <td>
+                        <p>平胜</p>
+                        <p>1.40</p>
+                    </td>
+                    <td>
+                        <p>平平</p>
+                        <p>1.40</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>平负</p>
+                        <p>1.40</p>
+                    </td>
+                    <td>
+                        <p>负胜</p>
+                        <p>1.40</p>
+                    </td>
+                    <td>
+                        <p>负平</p>
+                        <p>1.40</p>
+                    </td>
+                    <td colspan="2">
+                        <p>负负</p>
+                        <p>1.40</p>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="button-box">
+            <button class="cancel btn">取消</button>
+            <button class="confirm btn btn-primary">确定</button>
+        </div>
+    </div>
+    <!--比分投注弹出框-->
+    <div class="bf-betting-prop panel">
+        <p><span>曼联</span>(客)&emsp;vs&emsp;<span>切尔西</span>(主)</p>
+        <div class="table-box">
+            <table class="table table-bordered table-condensed">
+                <tr>
+                    <td>
+                        <p>1:0</p>
+                        <p>1.40</p>
+                    </td>
+                    <td>
+                        <p>1:0</p>
+                        <p>1.40</p>
+                    </td>
+                    <td>
+                        <p>1:0</p>
+                        <p>1.40</p>
+                    </td>
+                    <td>
+                        <p>1:0</p>
+                        <p>1.40</p>
+                    </td>
+                    <td>
+                        <p>1:0</p>
+                        <p>1.40</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>1:0</p>
+                        <p>1.40</p>
+                    </td>
+                    <td>
+                        <p>1:0</p>
+                        <p>1.40</p>
+                    </td>
+                    <td>
+                        <p>1:0</p>
+                        <p>1.40</p>
+                    </td>
+                    <td>
+                        <p>1:0</p>
+                        <p>1.40</p>
+                    </td>
+                    <td>
+                        <p>1:0</p>
+                        <p>1.40</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>5:1</p>
+                        <p>1.40</p>
+                    </td>
+                    <td>
+                        <p>6:1</p>
+                        <p>1.40</p>
+                    </td>
+                    <td colspan="3">
+                        <p>负其他</p>
+                        <p>1.40</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>1:0</p>
+                        <p>1.40</p>
+                    </td>
+                    <td>
+                        <p>1:0</p>
+                        <p>1.40</p>
+                    </td>
+                    <td>
+                        <p>1:0</p>
+                        <p>1.40</p>
+                    </td>
+                    <td>
+                        <p>1:0</p>
+                        <p>1.40</p>
+                    </td>
+                    <td>
+                        <p>平其他</p>
+                        <p>1.40</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>1:0</p>
+                        <p>1.40</p>
+                    </td>
+                    <td>
+                        <p>1:0</p>
+                        <p>1.40</p>
+                    </td>
+                    <td>
+                        <p>1:0</p>
+                        <p>1.40</p>
+                    </td>
+                    <td>
+                        <p>1:0</p>
+                        <p>1.40</p>
+                    </td>
+                    <td>
+                        <p>1:0</p>
+                        <p>1.40</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>1:0</p>
+                        <p>1.40</p>
+                    </td>
+                    <td>
+                        <p>1:0</p>
+                        <p>1.40</p>
+                    </td>
+                    <td>
+                        <p>1:0</p>
+                        <p>1.40</p>
+                    </td>
+                    <td>
+                        <p>1:0</p>
+                        <p>1.40</p>
+                    </td>
+                    <td>
+                        <p>1:0</p>
+                        <p>1.40</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>5:1</p>
+                        <p>1.40</p>
+                    </td>
+                    <td>
+                        <p>6:1</p>
+                        <p>1.40</p>
+                    </td>
+                    <td colspan="3">
+                        <p>负其他</p>
+                        <p>1.40</p>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="button-box">
+            <button class="cancel btn">取消</button>
+            <button class="confirm btn btn-primary">确定</button>
+        </div>
+    </div>
+    <!--半全场投注弹出框-->
+    <div class="bqc-betting-prop panel">
+        <p><span>曼联</span>(客)&emsp;vs&emsp;<span>切尔西</span>(主)</p>
+        <div class="table-box">
+            <table class="table table-bordered table-condensed">
+                <tr>
+                    <td>
+                        <p>胜胜</p>
+                        <p>1.40</p>
+                    </td>
+                    <td>
+                        <p>胜胜</p>
+                        <p>1.40</p>
+                    </td>
+                    <td>
+                        <p>胜胜</p>
+                        <p>1.40</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>胜胜</p>
+                        <p>1.40</p>
+                    </td>
+                    <td>
+                        <p>胜胜</p>
+                        <p>1.40</p>
+                    </td>
+                    <td>
+                        <p>胜胜</p>
+                        <p>1.40</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>胜胜</p>
+                        <p>1.40</p>
+                    </td>
+                    <td>
+                        <p>胜胜</p>
+                        <p>1.40</p>
+                    </td>
+                    <td>
+                        <p>胜胜</p>
+                        <p>1.40</p>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="button-box">
+            <button class="cancel btn">取消</button>
+            <button class="confirm btn btn-primary">确定</button>
+        </div>
+    </div>
+    <!--筛选 弹出框-->
+    <div class="screen-prop panel">
+        <div class="menu-box">
+            <button class="btn btn-mini all-choose">全选</button>
+            <button class="btn btn-mini reverse-choose">反选</button>
+            <button class="btn btn-mini five-league">仅五大联赛</button>
+        </div>
+        <!--投注选项盒子-->
+        <div class="betting-option-box">
+            <span>葡超</span><span class="span-five-league">意甲</span><span>俄超</span>
+            <span class="span-five-league">法甲</span><span>意大利甲级联赛</span><span>苏超</span>
+            <span>德乙</span><span>法乙</span><span>墨联</span>
+            <span>荷甲</span><span>日乙</span><span>阿甲</span>
+            <span>英冠</span><span>瑞典超</span><span class="span-five-league">德甲</span>
+            <span>西班牙甲级联赛</span><span>比甲</span><span>日联</span>
+            <span>韩职联</span><span class="span-five-league">英超</span><span>荷乙</span>
+            <span class="span-five-league">西甲</span><span class="span-last"></span><span class="span-last"></span>
+        </div>
+        <p>共<span>146</span>场比赛</p>
+        <div class="button-box">
+            <button class="cancel btn">取消</button>
+            <button class="confirm btn btn-primary">确定</button>
+        </div>
+    </div>
+
+</section>
+<!-- ZUI Javascript 依赖 jQuery -->
+<script src="./node_modules/zui/dist/lib/jquery/jquery.js"></script>
+<!-- ZUI 标准版压缩后的 JavaScript 文件 -->
+<script src="./node_modules/zui/dist/js/zui.min.js"></script>
+<!--引入页面js代码-->
+<script src="js/footballLottery.js"></script>
+<script src="js/test.js"></script>
+</body>
+</html>

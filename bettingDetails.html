@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--视口设置-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- ZUI 标准版压缩后的 CSS 文件 -->
+    <link rel="stylesheet" href="./node_modules/zui/dist/css/zui.min.css">
+    <title>三堂彩</title>
+    <!--引入公共样式-->
+    <link rel="stylesheet" href="./css/common.css">
+    <!--引入投注页面公共样式-->
+    <link rel="stylesheet" href="./css/recordCommon.css">
+    <link rel="stylesheet" href="./css/bettingDetails.css">
+
+</head>
+<body>
+<!--头部-->
+<header>
+    <span class="back"><i class="icon icon-angle-left"></i></span>
+    <p>投注详情</p>
+    <button class="share btn">分享</button>
+</header>
+<!--主体内容-->
+<main class="main">
+    <section class="wrap-box">
+        <img src="./images/jczq@3x.png" alt="" class="logo">
+        <span>
+            <p class="title">竞彩足球</p>
+            <p class="title-info">混合投注</p>
+        </span>
+        <img src="./images/jczq@3x.png" alt="" class="email">
+        <span class="pull-right">
+            <p class="drawing-status">待开奖</p>
+            <p class="expect-lottery-time"></p>
+        </span>
+    </section>
+    <p class="message">方案信息</p>
+    <section class="betting-info">
+        <p>投注金额：<span class="units"></span>注&nbsp;<span class="multiple"></span>倍&nbsp;<span class="amount"></span>元</p>
+        <p>投注时间: <span class="betting-time"></span></p>
+        <p>订单编号: <span class="order-number"></span></p>
+        <p class="lottery-number">开奖号码: <span></span></p>
+        <!--<p class="lottery-number">开奖号码: <em>01</em><em>02</em><em>03</em><em>04</em></p>-->
+    </section>
+    <p class="message">方案内容</p>
+    <section class="betting-content football-lottery">
+        <div class="wrapper-box">
+            <p>过关: <span class="bg-yellow">2串1</span>&emsp;<span class="bg-yellow">3串1</span> <span class="pull-right">预计奖金:<span class="text-red">￥12.58</span>~<span class="text-red">￥666.58</span></span></p>
+            <div class="row">
+                <div class="col-sm-3 col-xs-3">
+                    <p>周三 020</p>
+                </div>
+                <div class="col-sm-9 col-xs-9">
+                    <em class="item-title">曼联(主)</em>&emsp;08-22 23:30 <em class="item-title">切尔西(客)</em>
+                </div>
+                <div class="col-sm-3 col-xs-3 text-center">
+                    <p>英超</p>
+                    <em class="dan">胆</em>
+                </div>
+                <div class="col-sm-9 col-xs-9  score-box ">
+                    <div class="clearfix">
+                        <span class="bg-green"><p>胜</p><p>1.4</p></span><span><p>胜</p><p>1.4</p></span><span><p>胜</p><p>1.4</p></span>
+                    </div>
+                    <div class="clearfix">
+                        <span class="bg-green"><p >1:0</p><p>1.4</p></span><span><p>胜</p><p>1.4</p></span><span><p>胜</p><p>1.4</p></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="wrapper-box">
+            <div class="row">
+                <div class="col-sm-3 col-xs-3">
+                    <p>周三 020</p>
+                </div>
+                <div class="col-sm-9 col-xs-9">
+                    <em class="item-title">曼联(主)</em>&emsp;08-22 23:30 <em class="item-title">切尔西(客)</em>
+                </div>
+                <div class="col-sm-3 col-xs-3 text-center">
+                    <p>英超</p>
+                </div>
+                <div class="col-sm-9 col-xs-9  score-box ">
+                    <div class="clearfix">
+                        <span class="bg-green"><p>1球</p><p>3.60</p></span>
+                    </div>
+                    <div class="clearfix">
+                        <span class="bg-green"><p >平-平</p><p>1.4</p></span><span><p>平-负</p><p>1.4</p></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="betting-content">
+        <ul class="bet-list">
+            <!--<li>-->
+                <!--<span class="order">1</span>-->
+                <!--<span>-->
+                    <!--<p><em>01</em><em>02</em><em>03</em></p>-->
+                    <!--<p>前三-直选-单式 1注  2元</p>-->
+                <!--</span>-->
+            <!--</li>-->
+        </ul>
+    </section>
+    <!--底部-->
+    <footer class="footer">
+        <button class="btn">竞彩足球投注</button>
+        <div class="row share-list text-center">
+            <div class="col-sm-3 col-xs-3"><img src="./images/share_to_weixin.png" alt="微信"></div>
+            <div class="col-sm-3 col-xs-3"><img src="./images/share_to_pyq.png" alt="朋友圈"></div>
+            <div class="col-sm-3 col-xs-3"><img src="./images/share_to_qq.png" alt="QQ"></div>
+            <div class="col-sm-3 col-xs-3"><img src="./images/share_to_qzone.png" alt="QQ空间"></div>
+        </div>
+    </footer>
+</main>
+<!-- ZUI Javascript 依赖 jQuery -->
+<script src="./node_modules/zui/dist/lib/jquery/jquery.js"></script>
+<!-- ZUI 标准版压缩后的 JavaScript 文件 -->
+<script src="./node_modules/zui/dist/js/zui.min.js"></script>
+<script src="js/bettingDetails.js"></script>
+</body>
+</html>

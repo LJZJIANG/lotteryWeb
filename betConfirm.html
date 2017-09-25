@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--视口设置-->
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <!-- ZUI 标准版压缩后的 CSS 文件 -->
+    <link rel="stylesheet" href="./node_modules/zui/dist/css/zui.min.css">
+    <title>三堂彩</title>
+    <link rel="stylesheet" href="./css/common.css">
+    <!-- 引入 开奖信息页面公共样式-->
+    <link rel="stylesheet" href="css/betConfirm.css">
+</head>
+<body>
+<!--头部-->
+<header>
+    <span class="back"><i class="icon icon-angle-left"></i></span>
+    <p>投注确认</p>
+</header>
+<p class="wrapper-title"><span class="periods"></span><span>投注截止：03:12</span></p>
+<!--主体内容-->
+<main class="wrapper">
+    <p class="choose-agin"><span class="to-bet">+继续选号</span><span class="random-choose">+机选一注</span></p>
+    <div class="my-choose-number"></div>
+    <p><input type="checkbox" checked="checked">我已阅读并同意彩店###服务协议></p>
+</main>
+<!--尾部-->
+<footer class="footer">
+    <p class="remaining ">
+        余额:
+        <em>0元</em>
+        <span> 红包: <em class="red-packet">5元</em></span>
+    </p>
+    <!--追投倍数盒子-->
+    <div class="multiple-box clearfix">
+        <span>
+            投 <input class="stage" value="1" type="text"/>倍
+        </span>
+        <span>
+            追 <input class="multiple" value="1" type="text"/>期
+        </span>
+    </div>
+    <p class="stop-bet"><input type="checkbox" checked="checked">中奖后停止</p>
+    <div class="clearfix">
+        <button class="btn zhuihao pull-left">智能追号</button>
+        <span class="betinfo info1">
+            <em class="betinfo-betcount"></em>注<em class="betinfo-times">1</em>倍<em class="betinfo-money"></em>元
+        </span>
+        <span class="betinfo info2">
+            追<em class="info2-stage">1</em>期&nbsp;<em class="info2-paymoney"></em>元
+        </span>
+        <button class="btn submit pull-right">提交</button>
+    </div>
+</footer>
+
+<!--======================================智能选号 部分======================================================-->
+<p class="znzh-wrapper-title"><span class="title-stage"></span><span class="title-lasttime">投注截止：03:12</span></p>
+<!--主体内容-->
+<main class="znzh-wrapper">
+    <p class="choose-agin"><span>起始倍数:<input type="text" value="1" class="choose-agin-multiple">倍</span><span>连续追期: <input class="choose-agin-stage" type="text" value="10">期</span></p>
+    <p>预期盈利:全程最高盈利率&nbsp; <em class="text-red">30%</em></p>
+    <table class="table table-bordered table-condensed">
+        <thead>
+        <tr>
+            <th>序号</th>
+            <th>期号</th>
+            <th>&emsp;倍数</th>
+            <th>累计投入</th>
+            <th>中奖盈利</th>
+            <th>盈利率</th>
+        </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+</main>
+<!--尾部-->
+<footer class="znzh-footer">
+    <p><input type="checkbox" checked="checked">中奖后停止</p>
+    <div class="clearfix">
+        <button class="btn xuanhao pull-left">我的选号</button>
+        <span class="betinfo">
+            追<em class="betinfo-stage"></em>期<em class="betinfo-paymoney"></em>元
+        </span>
+        <button class="btn submit pull-right">提交</button>
+    </div>
+</footer>
+
+<!--弹出框-->
+<div class="prop-box1">
+    <div class="prompt-info panel">
+        <div class="prompt-info-head">
+            <span>√</span>
+            <p>已提交彩票店，祝您中奖</p>
+        </div>
+        <div class="prompt-info-bottom clearfix">
+            <a class="check-order" href="bettingDetails.html">查看订单</a>
+            <a class="confirm">确定</a>
+        </div>
+    </div>
+
+    <div class="prompt-info panel clearchoose">
+        <div class="prompt-info-head">
+            <p>返回将清空选项</p>
+        </div>
+        <div class="prompt-info-bottom clearfix ">
+            <a class="confirm">确定</a>
+            <a class="cancel">取消</a>
+        </div>
+    </div>
+    <!--智能追号中我的选号-->
+    <div class="my-choose-number panel">
+    </div>
+</div>
+
+
+<!-- ZUI Javascript 依赖 jQuery -->
+<script src="./node_modules/zui/dist/lib/jquery/jquery.js"></script>
+<!-- ZUI 标准版压缩后的 JavaScript 文件 -->
+<script src="./node_modules/zui/dist/js/zui.min.js"></script>
+<!--引入页面js代码-->
+<script src="js/common.js" ></script>
+<script src="js/betPublicPart.js" id="script-tag"></script>
+<!--<script src="js/betConfirm.js" ></script>-->
+<script>
+    /**
+     * 动态创建script标签 ，根据彩种id 动态加载js文件
+     * @type {Element}
+     */
+    var script=document.createElement("script");
+    script.type="text/javascript";
+    var lotteryId = $.zui.store.get('lotteryId');
+//        十一选五
+    if(lotteryId==71){
+        script.src = 'js/betConfirm.js';
+    }else if(lotteryId==81){
+        script.src = 'js/ksBetConfirm.js';
+    }
+    $('#script-tag').after(script);
+
+
+</script>
+</body>
+</html>

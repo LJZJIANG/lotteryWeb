@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--============================银行卡列表  界面=========================================-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--视口设置-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- ZUI 标准版压缩后的 CSS 文件 -->
+    <link rel="stylesheet" href="./node_modules/zui/dist/css/zui.min.css">
+    <title>三堂彩</title>
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/bankCardList.css">
+</head>
+<body>
+<!--头部-->
+<header>
+    <span class="back" onclick="window.history.back(-1);"><i class="icon icon-angle-left"></i></span>
+    <p>银行卡</p>
+</header>
+<!--主体内容-->
+<main>
+    <!--银行卡列表-->
+    <section class="card-list">
+        <div class="card-info">
+            <dl>
+                <img src="./images/u22.png" alt="">
+                <dt>招商银行
+                    <em class="top-up">充</em>
+                    <em class="draw-money">提</em>
+                </dt>
+                <dd>储蓄卡</dd>
+                <dt>6222********0916</dt>
+            </dl>
+            <span><button class="delete btn">删除</button><button class="edit btn">修改</button></span>
+        </div>
+        <div class="card-info">
+            <dl>
+                <img src="./images/u22.png" alt="">
+                <dt>中国银行
+                    <em class="top-up">充</em>
+                    <em class="draw-money">提</em>
+                </dt>
+                <dd>储蓄卡</dd>
+                <dt>6222********0916</dt>
+            </dl>
+            <span><button class="delete btn">删除</button><button class="edit btn">修改</button></span>
+        </div>
+    </section>
+
+</main>
+<!--尾部-->
+<footer class="footer">
+    <div class="add-card">
+        <i class="icon icon-plus icon-2x"></i>
+    </div>
+</footer>
+<!--点击提现后提示框-->
+<div class="container-box">
+    <div class="confirm-box">
+        <div>确认删除</div>
+        <span class="cancel">取消</span><span class="confirm">确认</span>
+    </div>
+</div>
+<div class="popup">删除成功</div>
+<!-- ZUI Javascript 依赖 jQuery -->
+<script src="./node_modules/zui/dist/lib/jquery/jquery.js"></script>
+<!-- ZUI 标准版压缩后的 JavaScript 文件 -->
+<script src="./node_modules/zui/dist/js/zui.min.js"></script>
+<script>
+    $(function () {
+        var $container_box = $('.container-box');
+        var $popup = $('.popup');
+        // 删除银行卡
+        $('.delete').on('click',function () {
+            $container_box.show();
+            console.log($(this).closest('.crad-info')); // 获取删除的银行卡
+        })
+        // 修改银行卡
+        $('.edit').on('click',function () {
+            location.href = 'bankCard.html';
+        })
+        // 添加银行卡
+        $('.add-card').on('click',function () {
+            location.href='bankCard.html'
+        })
+        $('.cancel').on('click',function () {
+            $container_box.hide();
+        })
+        $('.confirm').on('click',function () {
+            $container_box.hide();
+            $popup.show();
+            setTimeout(function () {
+                // 删除成功 淡出隐藏弹出框
+                $popup.fadeOut('slow');
+            },500);
+        });
+        // 充值
+        $('.top-up').on('click',function () {
+            location.href = 'recharge.html';
+        })
+        // 提款
+        $('.draw-money').on('click',function () {
+            location.href = 'withdrawals.html';
+        })
+    })
+</script>
+</body>
+</html>

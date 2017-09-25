@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--视口设置-->
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <!-- ZUI 标准版压缩后的 CSS 文件 -->
+    <link rel="stylesheet" href="./node_modules/zui/dist/css/zui.min.css">
+    <title>三堂彩</title>
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/personalCommon.css">
+    <style>
+        body{
+            background: #FBFBFB;
+        }
+        .wrapper{
+            padding: 1rem 0;
+            background: #fff;
+            margin: 1rem 0 1.5rem;
+        }
+        .next{
+            display: block;
+            margin: 0 auto;
+            width: 50%;
+            /*display: none;*/
+        }
+        .unauthorized{
+            /*display: none;*/
+        }
+        /*已认证*/
+        .authenticated{
+            height: 5rem;
+            line-height:5rem;
+            padding: 0 3rem;
+            display: none;
+            /*border-top: 1px solid #ccc;*/
+            /*border-bottom: 1px solid #ccc;*/
+        }
+        .authenticated>button{
+            width: 40%;
+            /*display: block;*/
+            margin: 2rem auto;
+        }
+    </style>
+</head>
+<body>
+<!--头部-->
+<header>
+    <span class="back" onclick="window.history.back(-1);"><i class="icon icon-angle-left"></i></span>
+    <p>绑定邮箱</p>
+</header>
+<!--主体内容-->
+<main class="wrapper">
+    <!--未认证-->
+    <div class="unauthorized">
+        <p>
+            <span>邮箱</span>
+            <input type="email" class="form-control email">&nbsp;<em>获取验证码</em>
+        </p>
+        <p>
+            <span>验证码</span>
+            <input type="text" class="form-control auth-code" placeholder="请输入验证码">
+        </p>
+    </div>
+    <!--已认证-->
+    <div class="authenticated">
+        <p>邮箱：<span>y***h@163.com</span></p>
+        <button class="btn edit">修改</button>
+    </div>
+</main>
+<div>
+    <button class="btn next">下一步</button>
+</div>
+
+
+<!--点击提现后提示框-->
+<div class="container-box">
+    <div class="prompt">
+        <div class="prompt-top">
+            <img src="./images/u61.png" alt="">
+            <p>绑定成功!</p>
+        </div>
+        <button class="goback btn" type="button">返回</button>
+    </div>
+</div>
+
+<!-- ZUI Javascript 依赖 jQuery -->
+<script src="./node_modules/zui/dist/lib/jquery/jquery.js"></script>
+<!-- ZUI 标准版压缩后的 JavaScript 文件 -->
+<script src="./node_modules/zui/dist/js/zui.min.js"></script>
+<script>
+    $(function () {
+        var $realAuthCode = $('p>em');
+        // 点击获取验证码
+        $realAuthCode.on('click',function () {
+            var $this = $(this);
+            $this.html('剩余58s');
+        })
+        // 返回
+        $('.next').click(function () {
+            var tel = $('.email').val();
+            var password = $('.auth-code').val();
+
+            console.log(tel,password,$realAuthCode.html());
+
+            $('.container-box').show();
+        })
+        $('.goback').on('click',function () {
+            window.history.back(-1);
+        })
+        
+        $('.edit').on('click',function () {
+            $('.authenticated').hide();
+            $('.unauthorized').show(); // 显示未认证下的页面
+            $('.next').css('display','block').show();
+//            $('.next').show();
+
+        })
+    })
+
+</script>
+</body>
+</html>

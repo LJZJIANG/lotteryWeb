@@ -1,0 +1,77 @@
+/*
+充值金额
+*/
+
+.recharge-money{
+    padding: 1rem 1.5rem;
+    border-bottom: 1px solid #ccc;
+}
+.recharge-money>p{
+    margin-bottom: 1rem;
+}
+.recharge-money span{
+    /*width: 20%;*/
+}
+.recharge-money input{
+    display: inline-block;
+    margin-left: .5rem;
+    width: 70%;
+    outline: none;
+    text-indent: 0.5rem;
+}
+.choose-money span{
+    width: 100%;
+    display: inline-block;
+    border-radius: 3px;
+    border: 1px solid #797979;
+    text-align: center;
+    height: 3rem;
+    line-height: 3rem;
+    margin-bottom: 1rem;
+    box-shadow:0 0 1px #797979 inset;
+}
+
+.active{
+    background: #ff0000;
+    color: #fff;
+    border: 1px solid #ff0000 !important;
+}
+
+.pay-way>span{
+    display: block;
+    padding: 0.5rem 1.5rem ;
+    border-bottom: 1px solid #ccc;
+}
+.pay-way>span img{
+    width: 4rem;
+    height: 4rem;
+    margin-right: 1.5rem;
+}
+.pay-way>span input{
+    float: right;
+    margin-right: 6rem;
+    vertical-align: middle;
+    margin-top: 1.7rem;
+}
+.pay-way>span .text{
+    color: #aeaeae;
+}
+
+/*提示信息*/
+.promptInfo{
+    padding: 1.5rem 0.5rem;
+}
+footer{
+    border-top:  1px solid #ccc;
+    padding: 0.5rem;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 5rem;
+}
+footer>button{
+    width: 9rem;
+    outline: none;
+    height: 3rem;
+    margin-left: calc(50% - 4.5rem);
+}

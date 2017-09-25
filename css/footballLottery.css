@@ -1,0 +1,197 @@
+.choose-lottery{
+    display: inline-block;
+    width: 30%;
+    height: 2.5rem;
+    font-size: 1rem;
+    text-align: center;
+    padding: .5rem;
+    margin-left: calc(50% - 30%/2);
+    margin-top: .5rem;
+}
+.screen{
+    width: 2rem;
+    height: 2rem;
+    border: 2px solid #ccc;
+    border-radius: 7px;
+    line-height:2rem;
+    text-align: center;
+    float: right;
+    font-size: 1.2rem;
+    margin-right: 3.5rem;
+    margin-top: 1rem;
+}
+
+/*主体部分*/
+.lottery-title{
+    height: 1.5rem;
+    background: #ccc;
+    text-align: center;
+}
+.lottery-title>span{
+    margin-right: 1rem;
+}
+.mixed-betting{
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+    padding: .3rem 0 0.5rem;
+    overflow: hidden;
+}
+.mixed-betting-left{
+    float: left;
+    width: 29%;
+    margin-top: 1.5rem;
+}
+.mixed-betting-right{
+    float: right;
+    width: 70%;
+}
+.last-time{
+    color: #f00;
+}
+.mixed-betting-left>p:first-of-type{
+    font-weight: bold;
+    color: #535353;
+}
+.mixed-betting-right>p{
+    font-weight: bold;
+    font-size: .9rem;
+    height: 1.5rem;
+}
+.table-condensed td, .table-condensed th {
+    padding: 0px;
+}
+.more-method{
+    width: 20%;
+    padding-top: 1.7rem !important;
+}
+.mixed-betting-box tr>td{
+    width: 40%;
+}
+td>p:first-of-type{
+    font-weight: bold;
+}
+td>p>span{
+    color: #f00;
+    font-size: .8rem;
+}
+
+/*默认隐藏除混合投注外内容*/
+.main>div:not(:first-of-type){
+    display: none;
+}
+/****************胜负平************************/
+.sheng-fu .mixed-betting-left,.rqspf .mixed-betting-left,.score .mixed-betting-left,.bqc .mixed-betting-left{
+    margin-top: 0;
+}
+/*****************让球胜平负**********************/
+.rqspf tr>td{
+    width: 33.333%;
+}
+
+/******************比分****************/
+.score-box .mixed-betting-right>.btn,.bqc-box .mixed-betting-right>.btn{
+    width: 100%;
+}
+/*****************总进球*********************/
+.zjq-box tr>td{
+    width: 25%;
+}
+
+.footer{
+    height: 3.5rem;
+}
+.footer>div{
+    line-height: 1.5rem;
+}
+.footer>div>span{
+    font-size: 1rem;
+}
+.footer>div>button{
+    position: absolute;
+    top: 0.5rem;
+}
+.clear-bar{
+    left: .5rem;
+}
+.confirm{
+    right: .5rem;
+}
+
+/*********************弹出层****************************/
+/*混合投注*/
+.mixed-betting-prop,.bf-betting-prop,.bqc-betting-prop,.screen-prop{
+    background: #fff;
+    position: absolute;
+    width: 98%;
+    top: 1rem;
+    left:calc(50% - 98%/2);
+    padding: .3rem;
+    text-align: center;
+    display: none;
+}
+.container-box>div>p{
+    font-weight: bold;
+}
+.container-box>div .table{
+    margin-bottom: .5rem;
+}
+.left-menu{
+    width: 7%;
+    vertical-align: middle !important;
+    padding: 0 .2rem !important;
+}
+.container-box>div .table td{
+    line-height: 1.43;
+}
+.button-box{
+    margin: 1rem 0 .5rem;
+    display: flex;
+    justify-content: space-around;
+    flex-grow: 1;
+}
+.button-box>.btn{
+    padding: .7rem 0;
+    width: 40%;
+
+}
+/*比分投注 弹出框*/
+.bf-betting-prop{
+    top: 20%;
+}
+/*半全场投注 弹出框*/
+.bqc-betting-prop,.screen-prop{
+    top: 25%;
+}
+
+/*筛选弹出框*/
+.menu-box{
+    display: flex;
+    flex-grow: 1;
+    justify-content: space-between;
+    margin-top: .5rem;
+}
+.menu-box>button{
+    width: 33.33%;
+}
+.screen-prop .button-box{
+    margin: 0 0 0.5rem;
+}
+.screen-prop>p{
+    margin: .5rem 0;
+    font-weight: 400 !important;
+}
+.betting-option-box{
+    margin-top: .5rem;
+    display: flex;
+    flex-grow: 1;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.betting-option-box>span{
+    width: 30.33%;
+    border: 1px solid #aacc22;
+    margin-top: .5rem;
+}
+.span-last{
+    visibility: hidden;
+}

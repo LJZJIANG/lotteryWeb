@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--视口设置-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- ZUI 标准版压缩后的 CSS 文件 -->
+    <link rel="stylesheet" href="./node_modules/zui/dist/css/zui.min.css">
+    <title>三堂彩</title>
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/lotteryRecord.css">
+
+</head>
+<body>
+<!--头部-->
+<header>
+    <span class="back" onclick="window.history.back(-1);"><i class="icon icon-angle-left"></i></span>
+    <p>追号记录</p>
+</header>
+<!--主体内容-->
+<main>
+    <ul class="record-type">
+        <li class="active">进行中</li>
+        <li>已完成</li>
+        <li>已取消</li>
+    </ul>
+
+    <div class="tab-box">
+        <div class="lottery-box">
+            <ul class="lottery-list">
+                <!--追号方案-->
+                <li class="add-plan row">
+                        <div class="col-xs-3 col-sm-3 col-md-3"><img src="./images/u4.png" alt="">
+                            <p>彩种名称</p>
+                        </div>
+                        <div class="col-xs-6 col-sm-6 col-md-6 lottery-time-data">
+                            <div class="row">
+                                <div class="col-xs-6 col-sm-6 col-md-6"><img src="./images/u4.png" alt=""><p>08-25 20:32</p></div>
+                                <div class="col-xs-6 col-sm-6 col-md-6"><img src="./images/u4.png" alt=""><p>20.00元</p></div>
+                            </div>
+                        </div>
+                        <div class="col-xs-3 col-sm-3 col-md-3 to-lottery">进行中 ></div>
+                </li>
+                <!--套餐-->
+                <li class="set-meal row">
+                        <div class="col-xs-3 col-sm-3 col-md-3"><img src="./images/u4.png" alt="">
+                            <p>彩种名称</p>
+                        </div>
+                        <div class="col-xs-6 col-sm-6 col-md-6 lottery-time-data">
+                            <div class="row">
+                                <div class="col-xs-6 col-sm-6 col-md-6"><img src="./images/u4.png" alt=""><p>08-25 20:32</p></div>
+                                <div class="col-xs-6 col-sm-6 col-md-6"><img src="./images/u4.png" alt=""><p>20.00元</p></div>
+                            </div>
+                        </div>
+                        <div class="col-xs-3 col-sm-3 col-md-3 to-lottery text-red">进行中 ></div>
+                </li>
+                <li class="set-meal row">
+                        <div class="col-xs-3 col-sm-3 col-md-3"><img src="./images/u4.png" alt="">
+                            <p>彩种名称</p>
+                        </div>
+                        <div class="col-xs-6 col-sm-6 col-md-6 lottery-time-data">
+                            <div class="row">
+                                <div class="col-xs-6 col-sm-6 col-md-6"><img src="./images/u4.png" alt=""><p>08-25 20:32</p></div>
+                                <div class="col-xs-6 col-sm-6 col-md-6"><img src="./images/u4.png" alt=""><p>20.00元</p></div>
+                            </div>
+                        </div>
+                        <div class="col-xs-3 col-sm-3 col-md-3 to-lottery">进行中 ></div>
+                </li>
+            </ul>
+        </div>
+        <div class="lottery-box">
+            <ul class="lottery-list">
+                <li>
+                    <div class="row">
+                        <div class="col-xs-3 col-sm-3 col-md-3"><img src="./images/u4.png" alt="">
+                            <p>彩种名称</p>
+                        </div>
+                        <div class="col-xs-6 col-sm-6 col-md-6 lottery-time-data">
+                            <div class="row">
+                                <div class="col-xs-6 col-sm-6 col-md-6"><img src="./images/u4.png" alt=""><p>08-25 20:32</p></div>
+                                <div class="col-xs-6 col-sm-6 col-md-6"><img src="./images/u4.png" alt=""><p>20.00元</p></div>
+                            </div>
+                        </div>
+                        <div class="col-xs-3 col-sm-3 col-md-3 to-lottery">中 <span class="text-red">980元</span> ></div>
+                    </div>
+                </li>
+            </ul>
+            <ul class="lottery-list">
+                <li>
+                    <div class="row">
+                        <div class="col-xs-3 col-sm-3 col-md-3"><img src="./images/u4.png" alt="">
+                            <p>彩种名称</p>
+                        </div>
+                        <div class="col-xs-6 col-sm-6 col-md-6 lottery-time-data">
+                            <div class="row">
+                                <div class="col-xs-6 col-sm-6 col-md-6"><img src="./images/u4.png" alt=""><p>08-25 20:32</p></div>
+                                <div class="col-xs-6 col-sm-6 col-md-6"><img src="./images/u4.png" alt=""><p>20.00元</p></div>
+                            </div>
+                        </div>
+                        <div class="col-xs-3 col-sm-3 col-md-3 to-lottery">未中奖 ></div>
+                    </div>
+                </li>
+            </ul>
+            <ul class="lottery-list">
+                <li>
+                    <div class="row">
+                        <div class="col-xs-3 col-sm-3 col-md-3"><img src="./images/u4.png" alt="">
+                            <p>彩种名称</p>
+                        </div>
+                        <div class="col-xs-6 col-sm-6 col-md-6 lottery-time-data">
+                            <div class="row">
+                                <div class="col-xs-6 col-sm-6 col-md-6"><img src="./images/u4.png" alt=""><p>08-25 20:32</p></div>
+                                <div class="col-xs-6 col-sm-6 col-md-6"><img src="./images/u4.png" alt=""><p>20.00元</p></div>
+                            </div>
+                        </div>
+                        <div class="col-xs-3 col-sm-3 col-md-3 to-lottery">未中奖 ></div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="lottery-box">
+            <ul class="lottery-list">
+                <li>
+                    <div class="row">
+                        <div class="col-xs-3 col-sm-3 col-md-3"><img src="./images/u4.png" alt="">
+                            <p>彩种名称</p>
+                        </div>
+                        <div class="col-xs-6 col-sm-6 col-md-6 lottery-time-data">
+                            <div class="row">
+                                <div class="col-xs-6 col-sm-6 col-md-6"><img src="./images/u4.png" alt=""><p>08-25 20:32</p></div>
+                                <div class="col-xs-6 col-sm-6 col-md-6"><img src="./images/u4.png" alt=""><p>20.00元</p></div>
+                            </div>
+                        </div>
+                        <div class="col-xs-3 col-sm-3 col-md-3 to-lottery text-red">已取消 ></div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+</main>
+<!--尾部-->
+<footer></footer>
+<!-- ZUI Javascript 依赖 jQuery -->
+<script src="./node_modules/zui/dist/lib/jquery/jquery.js"></script>
+<!-- ZUI 标准版压缩后的 JavaScript 文件 -->
+<script src="./node_modules/zui/dist/js/zui.min.js"></script>
+<script>
+    $(function () {
+        var $li =  $('.record-type>li');
+        $li.on('click',function () {
+            var $this = $(this);
+            //  先移除所有的 ".active"  样式
+            $li.removeClass('active');
+//           为点击的li 加上样式
+            $this.addClass('active');
+            var index = $this.index();
+//           找到和li对于索引的div，并设置相应的显示与隐藏
+            $('.tab-box>.lottery-box').hide().eq(index).show();
+        })
+        // 普通追号方案跳转页面
+        $('.add-plan').on('click',function () {
+            location.href='./zhuiHaoBettingDetails.html';
+        })
+        // 套餐跳转页面
+        $('.set-meal').on('click',function () {
+            location.href='./zhuiHaoBettingDetails_2.html';
+        })
+    })
+</script>
+</body>
+</html>

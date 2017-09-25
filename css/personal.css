@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/*头部样式*/
+header{
+    height: 4rem;
+    border-bottom: 1px solid #ccc;
+}
+header p{
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    line-height: 4rem;
+}
+
+/*主体内容*/
+
+.person{
+    background-color: #ffebcc;
+}
+
+.person-info{
+    padding: 1rem 2.5rem;
+}
+.person-info>img{
+    margin-right: 0.8rem;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+}
+
+/*余额*/
+.person-money>span{
+    display: block;
+    width: 50%;
+    background-color: #b5ab9b;
+    color: #fff;
+    text-align: center;
+    padding: .7rem 0;
+}
+
+.person-money>.pull-left{
+    border-right: 1px solid #fff;
+}
+/*充值提现操作*/
+.money-operation{
+    border-bottom: 1px solid #ccc;
+}
+.money-operation >span{
+    display: inline-block;
+    width: 49%;
+    padding: .5rem;
+}
+.money-operation span .btn{
+    width: 8rem;
+    position: relative;
+    left: calc(50% - 8rem/2);
+}
+
+.person-list{
+    margin-top: 0.4rem;
+    border-top: 1px solid #ccc ;
+    border-bottom: 1px solid #ccc ;
+    padding: 0 1rem;
+}
+.person-list ul{
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 0;
+}
+
+.person-list ul li{
+    position: relative;
+    font-size: 1.4rem;
+    height: 5rem;
+    line-height: 5rem;
+    border-bottom:  1px solid #ccc;
+}
+.person-list li>img{
+    width: 3rem;
+    height: 3rem;
+}
+
+.person-list ul span{
+    margin-left: .3rem;
+}
+.person-list li:last-child{
+    border-bottom: none;
+}
+.icon{
+    position: absolute;
+    right: 1rem;
+    line-height: 1.5;
+    color: #3d5a7f;
+    top:25%;
+
+}

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--视口设置-->
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <!-- ZUI 标准版压缩后的 CSS 文件 -->
+    <link rel="stylesheet" href="./node_modules/zui/dist/css/zui.min.css">
+    <title>三堂彩</title>
+    <link rel="stylesheet" href="./css/common.css">
+    <style>
+        .wrapper>a{
+            display: block;
+            margin-top: .5rem;
+            border-top: 1px solid #ccc;
+            border-bottom: 1px solid #ccc;
+            height: 3.5rem;
+            line-height: 3.5rem;
+            color: #353535;
+            padding: 0 2rem;
+            text-decoration: none;
+        }
+        a>i{
+            line-height: 3.5rem !important;
+        }
+        .prompt{
+            width: 25rem;
+            height: 15rem;
+            left: calc(50% - 25rem/2);
+            top: calc(50% - 35rem/2);
+
+        }
+        .prompt>.prompt-top>p{
+            color: #353535;
+        }
+    </style>
+</head>
+<body>
+<!--头部-->
+<header>
+    <span class="back" onclick="window.history.back(-1);"><i class="icon icon-angle-left"></i></span>
+    <p>更多</p>
+</header>
+<!--主体内容-->
+<main class="wrapper">
+    <a href="#">
+        <span>意见反馈</span>
+        <i class="icon icon-angle-right pull-right"></i>
+    </a>
+    <a href="#">
+        <span>帮助中心</span>
+        <i class="icon icon-angle-right pull-right"></i>
+    </a>
+    <a href="pushSettings.html">
+        <span>推送设置</span>
+        <i class="icon icon-angle-right pull-right"></i>
+    </a>
+    <a href="#">
+        <span>检测最新版本</span>
+        <i class="icon icon-angle-right pull-right"></i>
+    </a>
+    <a href="#">
+        <span>关于我们</span>
+        <i class="icon icon-angle-right pull-right"></i>
+    </a>
+    <a href="#" class="log-out">
+        <span>退出登录</span>
+        <i class="icon icon-angle-right pull-right"></i>
+    </a>
+
+</main>
+<!--点击提现后提示框-->
+<div class="container-box">
+    <div class="prompt">
+        <div class="prompt-top">
+            <p>提示</p>
+            <p>确定退出登录?</p>
+        </div>
+        <button class="confirm  btn" type="button">确定</button>&emsp;&emsp;<button class="cancel btn" type="button">取消</button>
+    </div>
+</div>
+
+<!-- ZUI Javascript 依赖 jQuery -->
+<script src="./node_modules/zui/dist/lib/jquery/jquery.js"></script>
+<!-- ZUI 标准版压缩后的 JavaScript 文件 -->
+<script src="./node_modules/zui/dist/js/zui.min.js"></script>
+<script>
+    $(function () {
+        var $container_box = $('.container-box');
+        $('.log-out').on('click',function () {
+            $container_box.show();
+        })
+        $('.confirm').on('click',function () {
+            window.location.href = './login.html';
+        })
+        $('.cancel').on('click',function () {
+            $container_box.hide();
+        })
+    })
+
+</script>
+</body>
+</html>

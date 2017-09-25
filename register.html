@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--视口设置-->
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <!-- ZUI 标准版压缩后的 CSS 文件 -->
+    <link rel="stylesheet" href="./node_modules/zui/dist/css/zui.min.css">
+    <title>三堂彩</title>
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/personalCommon.css">
+    <style>
+        .wrapper{
+            background: #fff;
+            margin: 1rem 0 1.5rem;
+        }
+        .wrapper>div>button{
+            display: block;
+            margin: 0 auto;
+            width: 50%;
+        }
+        .agreement{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<!--头部-->
+<header>
+    <span class="back" onclick="window.history.back(-1);"><i class="icon icon-angle-left"></i></span>
+    <p>注册</p>
+</header>
+<!--主体内容-->
+<main class="wrapper">
+    <p>
+        <span>手机号</span>
+        <input type="password" class="form-control tel" placeholder="请输入手机号">&nbsp;<em>获取验证码</em>
+    </p>
+    <p>
+        <span>验证码</span>
+        <input type="password" class="form-control tel" placeholder="请输入验证码">
+    </p>
+    <p>
+        <span>密&emsp;码</span>
+        <input type="password" class="form-control password" placeholder="请输入6-15位数字/字母">
+    </p>
+    <p>
+        <span>确认密码</span>
+        <input type="password" class="form-control password" placeholder="再次确认密码">
+    </p>
+    <div>
+        <button class="btn register">注册</button>
+    </div>
+    <p class="agreement"><input type="checkbox">我同意《xx彩票服务协议》</p>
+</main>
+<!--点击提现后提示框-->
+<div class="container-box">
+    <div class="prompt">
+        <div class="prompt-top">
+            <img src="./images/u61.png" alt="">
+            <p>恭喜你注册成功!</p>
+        </div>
+        <button class="confirm btn" type="button">确定</button>
+    </div>
+</div>
+
+<!-- ZUI Javascript 依赖 jQuery -->
+<script src="./node_modules/zui/dist/lib/jquery/jquery.js"></script>
+<!-- ZUI 标准版压缩后的 JavaScript 文件 -->
+<script src="./node_modules/zui/dist/js/zui.min.js"></script>
+<script>
+    $(function () {
+        // 点击注册
+        $('.register').click(function () {
+            var tel = $('.tel').val();
+            var password = $('.password').val();
+            console.log(tel,password);
+
+            $('.container-box').show();
+
+
+        })
+        $('.confirm').on('click',function () {
+            window.location.href = './personal.html';
+        })
+//        $close_2.on('click',function () {
+//            bankCard.val('');
+//            bankCard.focus();
+//        });
+    })
+
+</script>
+</body>
+</html>

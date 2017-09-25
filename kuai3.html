@@ -1,0 +1,750 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<!--视口设置-->
+	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<!-- ZUI 标准版压缩后的 CSS 文件 -->
+	<link rel="stylesheet" href="./node_modules/zui/dist/css/zui.min.css">
+	<title>三堂彩</title>
+	<link rel="stylesheet" href="./css/common.css">
+	<!-- 引入 开奖信息页面公共样式-->
+	<link rel="stylesheet" href="./css/kuai3.css">
+	<link rel="stylesheet" href="./css/footerCommon.css">
+</head>
+<body>
+<!--头部-->
+<header>
+	<span class="back" onclick="window.history.back(-1);">
+		<i class="icon icon-angle-left"></i>
+	</span>
+	<p class="head-title"><span>和值</span>&nbsp;<i class="icon icon-caret-down icon-2x"></i></p>
+	<i class="icon icon-bars icon-2x"></i>
+</header>
+<!--开奖结果以及截至时间-->
+<section class="clearfix">
+	<!--开奖结果-->
+	<div class="lottery-results pull-left">
+		<p class="lottery-results-title"><em>025</em>期开奖结果</p>
+		<p class="lottery-results-number"><em>1</em><em>2</em><em>3</em></p>
+		<i class="icon icon-caret-down icon-2x"></i>
+	</div>
+	<!--截至时间-->
+	<div class="last-time pull-right">
+		<p class="last-time-title">距<em>025</em>期截止</p>
+		<span>05:25</span>
+	</div>
+</section>
+<!--开奖记录-->
+<section class="lottery-record">
+	<table class="table table-condensed table-striped">
+		<thead>
+			<tr>
+				<th>期次</th>
+				<th>开奖号码</th>
+				<th>和值</th>
+				<th>大小</th>
+				<th>类型</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>016</td>
+				<td class="lottery-number">
+					<em>3</em><em>4</em><em>4</em>
+				</td>
+				<th>12</th>
+				<td>大</td>
+				<td>二不同</td>
+			</tr>
+			<tr>
+				<td>016</td>
+				<td class="lottery-number">
+					<em>3</em><em>4</em><em>4</em>
+				</td>
+				<th>12</th>
+				<td>大</td>
+				<td>二不同</td>
+			</tr>
+			<tr>
+				<td>016</td>
+				<td class="lottery-number">
+					<em>3</em><em>4</em><em>4</em>
+				</td>
+				<th>12</th>
+				<td>大</td>
+				<td>二不同</td>
+			</tr>
+			<tr>
+				<td>016</td>
+				<td class="lottery-number">
+					<em>3</em><em>4</em><em>4</em>
+				</td>
+				<th>12</th>
+				<td>大</td>
+				<td>二不同</td>
+			</tr>
+			<tr>
+				<td>016</td>
+				<td class="lottery-number">
+					<em>3</em><em>4</em><em>4</em>
+				</td>
+				<th>12</th>
+				<td>大</td>
+				<td>二不同</td>
+			</tr>
+			<tr>
+				<td>016</td>
+				<td class="lottery-number">
+					<em>3</em><em>4</em><em>4</em>
+				</td>
+				<th>12</th>
+				<td>大</td>
+				<td>二不同</td>
+			</tr>
+			<tr>
+				<td>016</td>
+				<td class="lottery-number">
+					<em>3</em><em>4</em><em>4</em>
+				</td>
+				<th>12</th>
+				<td>大</td>
+				<td>二不同</td>
+			</tr>
+			<tr>
+				<td>016</td>
+				<td class="lottery-number">
+					<em>3</em><em>4</em><em>4</em>
+				</td>
+				<th>12</th>
+				<td>大</td>
+				<td>二不同</td>
+			</tr>
+		</tbody>
+	</table>
+
+</section>
+<!--主体内容-->
+<main class="main">
+	<!--和值-->
+	<div class="he-zhi">
+		<p>
+			<span class="introduce">与开奖号码的和值相同即中奖.</span>
+			<span class="shake">(摇一摇/遗漏)</span>
+		</p>
+		<div class="he-zhi-choose">
+			<div class="wrapper clearfix">
+				<!--左边功能按钮 选号+遗漏-->
+				<div class="choose-left pull-left">
+					<button class="btn btn-mini btn-primary">选号</button>
+					<button class="btn btn-mini btn-primary">遗漏</button>
+				</div>
+				<!--选项-->
+				<div class="choose-right pull-left">
+					<div class="choose-number-box">
+						<div class="choose-number">
+							<span class="number">3</span>
+							<p>奖金240</p>
+						</div>
+						<!--遗漏-->
+						<p class="missing">9</p>
+					</div>
+					<div class="choose-number-box">
+						<div class="choose-number">
+							<span class="number">4</span>
+							<p>奖金80</p>
+						</div>
+						<!--遗漏-->
+						<p class="missing">9</p>
+					</div>
+					<div class="choose-number-box">
+						<div class="choose-number">
+							<span class="number">5</span>
+							<p>奖金40</p>
+						</div>
+						<!--遗漏-->
+						<p class="missing">9</p>
+					</div>
+					<div class="choose-number-box">
+						<div class="choose-number">
+							<span class="number">6</span>
+							<p>奖金25</p>
+						</div>
+						<!--遗漏-->
+						<p class="missing">9</p>
+					</div>
+					<div class="choose-number-box">
+						<div class="choose-number">
+							<span class="number">7</span>
+							<p>奖金16</p>
+						</div>
+						<!--遗漏-->
+						<p class="missing">9</p>
+					</div>
+					<div class="choose-number-box">
+						<div class="choose-number">
+							<span class="number">8</span>
+							<p>奖金12</p>
+						</div>
+						<!--遗漏-->
+						<p class="missing">9</p>
+					</div>
+					<div class="choose-number-box">
+						<div class="choose-number">
+							<span class="number">9</span>
+							<p>奖金10</p>
+						</div>
+						<!--遗漏-->
+						<p class="missing">9</p>
+					</div>
+					<div class="choose-number-box">
+						<div class="choose-number">
+							<span class="number">10</span>
+							<p>奖金9</p>
+						</div>
+						<!--遗漏-->
+						<p class="missing">9</p>
+					</div>
+					<div class="choose-number-box">
+						<div class="choose-number">
+							<span class="number">11</span>
+							<p>奖金9</p>
+						</div>
+						<!--遗漏-->
+						<p class="missing">9</p>
+					</div>
+					<div class="choose-number-box">
+						<div class="choose-number">
+							<span class="number">12</span>
+							<p>奖金10</p>
+						</div>
+						<!--遗漏-->
+						<p class="missing">9</p>
+					</div>
+					<div class="choose-number-box">
+						<div class="choose-number">
+							<span class="number">13</span>
+							<p>奖金12</p>
+						</div>
+						<!--遗漏-->
+						<p class="missing">9</p>
+					</div>
+					<div class="choose-number-box">
+						<div class="choose-number">
+							<span class="number">14</span>
+							<p>奖金16</p>
+						</div>
+						<!--遗漏-->
+						<p class="missing">9</p>
+					</div>
+					<div class="choose-number-box">
+						<div class="choose-number">
+							<span class="number">15</span>
+							<p>奖金25</p>
+						</div>
+						<!--遗漏-->
+						<p class="missing">9</p>
+					</div>
+					<div class="choose-number-box">
+						<div class="choose-number">
+							<span class="number">16</span>
+							<p>奖金40</p>
+						</div>
+						<!--遗漏-->
+						<p class="missing">9</p>
+					</div>
+					<div class="choose-number-box">
+						<div class="choose-number">
+							<span class="number">17</span>
+							<p>奖金80</p>
+						</div>
+						<!--遗漏-->
+						<p class="missing">9</p>
+					</div>
+					<div class="choose-number-box">
+						<div class="choose-number">
+							<span class="number">18</span>
+							<p>奖金240</p>
+						</div>
+						<!--遗漏-->
+						<p class="missing">9</p>
+					</div>
+				</div>
+			</div>
+			<!--快捷选号-->
+			<div class="quick-choose">
+				<p>
+					<button class="btn btn-mini btn-primary">快捷选号</button>
+				</p>
+				<div class="quick-choose-box pull-right">
+					<div class="da">大</div>
+					<div class="xiao">小</div>
+					<div class="dan">单</div>
+					<div class="shuang">双</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--三同号单选-->
+	<div class="sthdx">
+		<p>
+			<span class="introduce">猜豹子号(3个号相同),奖金 <em>240元</em>.</span>
+			<span class="shake">(摇一摇/遗漏)</span>
+		</p>
+		<div class="wrapper clearfix">
+			<!--左边功能按钮 选号+遗漏-->
+			<div class="choose-left pull-left">
+				<button class="btn btn-mini btn-primary">选号</button>
+				<button class="btn btn-mini btn-primary">遗漏</button>
+			</div>
+			<!--选项-->
+			<div class="choose-right pull-left">
+				<div class="choose-number-box">
+					<div class="choose-number">
+						<span class="number">111</span>
+					</div>
+					<!--遗漏-->
+					<p class="missing">9</p>
+				</div>
+				<div class="choose-number-box">
+					<div class="choose-number">
+						<span class="number">222</span>
+					</div>
+					<!--遗漏-->
+					<p class="missing">9</p>
+				</div>
+				<div class="choose-number-box">
+					<div class="choose-number">
+						<span class="number">333</span>
+					</div>
+					<!--遗漏-->
+					<p class="missing">9</p>
+				</div>
+				<div class="choose-number-box">
+					<div class="choose-number">
+						<span class="number">444</span>
+					</div>
+					<!--遗漏-->
+					<p class="missing">9</p>
+				</div>
+				<div class="choose-number-box">
+					<div class="choose-number">
+						<span class="number">555</span>
+					</div>
+					<!--遗漏-->
+					<p class="missing">9</p>
+				</div>
+				<div class="choose-number-box">
+					<div class="choose-number">
+						<span class="number">666</span>
+					</div>
+					<!--遗漏-->
+					<p class="missing">9</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--三同号通选-->
+	<div class="sthtx">
+		<p>
+			<span class="introduce">猜豹子号(3个号相同),奖金 <em>40元</em>.</span>
+		</p>
+		<div class="wrapper clearfix">
+			<!--左边功能按钮 选号+遗漏-->
+			<div class="choose-left pull-left">
+				<button class="btn btn-mini btn-primary">选号</button>
+				<button class="btn btn-mini btn-primary">遗漏</button>
+			</div>
+			<!--选项-->
+			<div class="choose-right pull-left">
+				<div class="choose-number-box">
+					<div class="choose-number">
+						<span class="number">1&nbsp;1&nbsp;1&emsp;2&nbsp;2&nbsp;2&emsp;3&nbsp;3&nbsp;3 <br>
+							4&nbsp;4&nbsp;4&emsp;5&nbsp;5&nbsp;5&emsp;6&nbsp;6&nbsp;6
+						</span>
+					</div>
+					<!--遗漏-->
+					<p class="missing">9</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--三连号通选-->
+	<div class="slhtx">
+		<p>
+			<span class="introduce">猜中任意连号即中奖,奖金 <em>10元</em>.</span>
+		</p>
+		<div class="wrapper clearfix">
+			<!--左边功能按钮 选号+遗漏-->
+			<div class="choose-left pull-left">
+				<button class="btn btn-mini btn-primary">选号</button>
+				<button class="btn btn-mini btn-primary">遗漏</button>
+			</div>
+			<!--选项-->
+			<div class="choose-right pull-left">
+				<div class="choose-number-box">
+					<div class="choose-number">
+						<span class="number">1&nbsp;2&nbsp;3&emsp;2&nbsp;3&nbsp;4<br>
+							3&nbsp;4&nbsp;5&emsp;4&nbsp;5&nbsp;6
+						</span>
+					</div>
+					<!--遗漏-->
+					<p class="missing">9</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--三不同号-->
+	<div class="sbth">
+		<p>
+			<span class="introduce">猜开奖的3个不同号码,奖金 <em>40元</em>.</span>
+			<span class="shake">(摇一摇/遗漏)</span>
+		</p>
+		<div class="wrapper clearfix">
+			<!--左边功能按钮 选号+遗漏-->
+			<div class="choose-left pull-left">
+				<button class="btn btn-mini btn-primary">选号</button>
+				<button class="btn btn-mini btn-primary">遗漏</button>
+			</div>
+			<!--选项-->
+			<div class="choose-right pull-left">
+				<div class="choose-number-box">
+					<div class="choose-number">
+						<span class="number">1</span>
+					</div>
+					<!--遗漏-->
+					<p class="missing">9</p>
+				</div>
+				<div class="choose-number-box">
+					<div class="choose-number">
+						<span class="number">2</span>
+					</div>
+					<!--遗漏-->
+					<p class="missing">9</p>
+				</div>
+				<div class="choose-number-box">
+					<div class="choose-number">
+						<span class="number">3</span>
+					</div>
+					<!--遗漏-->
+					<p class="missing">9</p>
+				</div>
+				<div class="choose-number-box">
+					<div class="choose-number">
+						<span class="number">4</span>
+					</div>
+					<!--遗漏-->
+					<p class="missing">9</p>
+				</div>
+				<div class="choose-number-box">
+					<div class="choose-number">
+						<span class="number">5</span>
+					</div>
+					<!--遗漏-->
+					<p class="missing">9</p>
+				</div>
+				<div class="choose-number-box">
+					<div class="choose-number">
+						<span class="number">6</span>
+					</div>
+					<!--遗漏-->
+					<p class="missing">9</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--二不同号-->
+	<div class="ebth">
+		<p>
+			<span class="introduce">猜开奖的2个不同号码,奖金 <em>8元</em>.</span>
+			<span class="shake">(摇一摇/遗漏)</span>
+		</p>
+		<div class="wrapper clearfix">
+			<!--左边功能按钮 选号+遗漏-->
+			<div class="choose-left pull-left">
+				<button class="btn btn-mini btn-primary">选号</button>
+				<button class="btn btn-mini btn-primary">遗漏</button>
+			</div>
+			<!--选项-->
+			<div class="choose-right pull-left">
+				<div class="choose-number-box">
+					<div class="choose-number">
+						<span class="number">1</span>
+					</div>
+					<!--遗漏-->
+					<p class="missing">9</p>
+				</div>
+				<div class="choose-number-box">
+					<div class="choose-number">
+						<span class="number">2</span>
+					</div>
+					<!--遗漏-->
+					<p class="missing">9</p>
+				</div>
+				<div class="choose-number-box">
+					<div class="choose-number">
+						<span class="number">3</span>
+					</div>
+					<!--遗漏-->
+					<p class="missing">9</p>
+				</div>
+				<div class="choose-number-box">
+					<div class="choose-number">
+						<span class="number">4</span>
+					</div>
+					<!--遗漏-->
+					<p class="missing">9</p>
+				</div>
+				<div class="choose-number-box">
+					<div class="choose-number">
+						<span class="number">5</span>
+					</div>
+					<!--遗漏-->
+					<p class="missing">9</p>
+				</div>
+				<div class="choose-number-box">
+					<div class="choose-number">
+						<span class="number">6</span>
+					</div>
+					<!--遗漏-->
+					<p class="missing">9</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--二同号单选-->
+	<div class="ethdx">
+		<p>
+			<span class="introduce">选择同号与不同号的组合,奖金 <em>80元</em>.</span>
+			<span class="shake">(摇一摇/遗漏)</span>
+		</p>
+		<p class="ethdx-title">同号</p>
+		<div class="wrapper clearfix">
+			<!--左边功能按钮 选号+遗漏-->
+			<div class="choose-left pull-left">
+				<button class="btn btn-mini btn-primary">选号</button>
+				<button class="btn btn-mini btn-primary">遗漏</button>
+			</div>
+			<!--选项-->
+			<div class="choose-right pull-left">
+				<div class="choose-number-box">
+					<div class="choose-number">
+						<span class="number">11</span>
+					</div>
+					<!--遗漏-->
+					<p class="missing">9</p>
+				</div>
+				<div class="choose-number-box">
+					<div class="choose-number">
+						<span class="number">22</span>
+					</div>
+					<!--遗漏-->
+					<p class="missing">9</p>
+				</div>
+				<div class="choose-number-box">
+					<div class="choose-number">
+						<span class="number">33</span>
+					</div>
+					<!--遗漏-->
+					<p class="missing">9</p>
+				</div>
+				<div class="choose-number-box">
+					<div class="choose-number">
+						<span class="number">44</span>
+					</div>
+					<!--遗漏-->
+					<p class="missing">9</p>
+				</div>
+				<div class="choose-number-box">
+					<div class="choose-number">
+						<span class="number">55</span>
+					</div>
+					<!--遗漏-->
+					<p class="missing">9</p>
+				</div>
+				<div class="choose-number-box">
+					<div class="choose-number">
+						<span class="number">66</span>
+					</div>
+					<!--遗漏-->
+					<p class="missing">9</p>
+				</div>
+			</div>
+		</div>
+		<p class="ethdx-title">不同号</p>
+		<div class="choose-right pull-right">
+			<div class="choose-number-box">
+				<div class="choose-number">
+					<span class="number">1</span>
+				</div>
+				<!--遗漏-->
+				<p class="missing">9</p>
+			</div>
+			<div class="choose-number-box">
+				<div class="choose-number">
+					<span class="number">2</span>
+				</div>
+				<!--遗漏-->
+				<p class="missing">9</p>
+			</div>
+			<div class="choose-number-box">
+				<div class="choose-number">
+					<span class="number">3</span>
+				</div>
+				<!--遗漏-->
+				<p class="missing">9</p>
+			</div>
+			<div class="choose-number-box">
+				<div class="choose-number">
+					<span class="number">4</span>
+				</div>
+				<!--遗漏-->
+				<p class="missing">9</p>
+			</div>
+			<div class="choose-number-box">
+				<div class="choose-number">
+					<span class="number">5</span>
+				</div>
+				<!--遗漏-->
+				<p class="missing">9</p>
+			</div>
+			<div class="choose-number-box">
+				<div class="choose-number">
+					<span class="number">6</span>
+				</div>
+				<!--遗漏-->
+				<p class="missing">9</p>
+			</div>
+		</div>
+	</div>
+	<!--二同号复选-->
+	<div class="ethfx">
+		<p>
+			<span class="introduce">选择同号与不同号的组合,奖金 <em>15元</em>.</span>
+			<span class="shake">(摇一摇/遗漏)</span>
+		</p>
+		<div class="wrapper clearfix">
+			<!--左边功能按钮 选号+遗漏-->
+			<div class="choose-left pull-left">
+				<button class="btn btn-mini btn-primary">选号</button>
+				<button class="btn btn-mini btn-primary">遗漏</button>
+			</div>
+			<!--选项-->
+			<div class="choose-right pull-left">
+				<div class="choose-number-box">
+					<div class="choose-number">
+						<span class="number">11</span>
+					</div>
+					<!--遗漏-->
+					<p class="missing">9</p>
+				</div>
+				<div class="choose-number-box">
+					<div class="choose-number">
+						<span class="number">22</span>
+					</div>
+					<!--遗漏-->
+					<p class="missing">9</p>
+				</div>
+				<div class="choose-number-box">
+					<div class="choose-number">
+						<span class="number">33</span>
+					</div>
+					<!--遗漏-->
+					<p class="missing">9</p>
+				</div>
+				<div class="choose-number-box">
+					<div class="choose-number">
+						<span class="number">44</span>
+					</div>
+					<!--遗漏-->
+					<p class="missing">9</p>
+				</div>
+				<div class="choose-number-box">
+					<div class="choose-number">
+						<span class="number">55</span>
+					</div>
+					<!--遗漏-->
+					<p class="missing">9</p>
+				</div>
+				<div class="choose-number-box">
+					<div class="choose-number">
+						<span class="number">66</span>
+					</div>
+					<!--遗漏-->
+					<p class="missing">9</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</main>
+<!--尾部-->
+<footer class="footer">
+	<p class="show-or-hide">若中奖:奖金 <em class="bonus"></em>，<span>盈利</span>  <em class="profit"></em></p>
+	<div class="clearfix">
+		<button class="btn clear-bar pull-left">清空</button>
+		<span class="show-or-hide">共 <em class="count">0</em> 注 <em class="pay-money">0</em> 元</span>
+		<button class="btn confirm pull-right btn-primary">确定</button>
+	</div>
+</footer>
+<!--弹出层页面-->
+<div class="container-box">
+	<div class="betting-option-box">
+		<div class="betting-option current-border">
+			<p>和值</p>
+			<span>奖金9-240</span>
+			<p class="betting-option-example"><em>1</em>+<em>2</em>+<em>4</em></p>
+		</div>
+		<div class="betting-option">
+			<p>三同号单选</p>
+			<span>奖金240</span>
+			<p class="betting-option-example"><em>1</em>+<em>1</em>+<em>1</em></p>
+		</div>
+		<div class="betting-option">
+			<p>三同号通选</p>
+			<span>奖金40</span>
+			<p class="betting-option-example"><em>2</em>+<em>2</em>+<em>2</em></p>
+		</div>
+		<div class="betting-option">
+			<p>三连号通选</p>
+			<span>奖金10</span>
+			<p class="betting-option-example"><em>1</em>+<em>2</em>+<em>3</em></p>
+		</div>
+		<div class="betting-option">
+			<p>三不同号</p>
+			<span>奖金40</span>
+			<p class="betting-option-example"><em>3</em>+<em>4</em>+<em>6</em></p>
+		</div>
+		<div class="betting-option">
+			<p>二不同号</p>
+			<span>奖金8</span>
+			<p class="betting-option-example"><em>1</em>+<em>2</em></p>
+		</div>
+		<div class="betting-option">
+			<p>二同号单选</p>
+			<span>奖金80</span>
+			<p class="betting-option-example"><em>1</em>+<em>1</em>+<em>3</em></p>
+		</div>
+		<div class="betting-option">
+			<p>二同号复选</p>
+			<span>奖金15</span>
+			<p class="betting-option-example"><em>3</em>+<em>3</em></p>
+		</div>
+		<div class="betting-option">
+		</div>
+	</div>
+</div>
+<!-- 小对话框 -->
+<div class="panel panel-danger prop-panel">
+	不能三个号码都相同
+</div>
+<!-- ZUI Javascript 依赖 jQuery -->
+<script src="./node_modules/zui/dist/lib/jquery/jquery.js"></script>
+<!-- ZUI 标准版压缩后的 JavaScript 文件 -->
+<script src="./node_modules/zui/dist/js/zui.min.js"></script>
+<!--引入页面js代码-->
+<script src="./js/common.js"></script>
+<script src="./js/kuai3.js"></script>
+</body>
+</html>

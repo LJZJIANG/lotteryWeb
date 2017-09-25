@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<!--视口设置-->
+	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<!-- ZUI 标准版压缩后的 CSS 文件 -->
+	<link rel="stylesheet" href="./node_modules/zui/dist/css/zui.min.css">
+	<title>三堂彩</title>
+	<link rel="stylesheet" href="./css/common.css">
+	<!-- 引入 开奖信息页面公共样式-->
+	<link rel="stylesheet" href="./css/syxw.css">
+	<link rel="stylesheet" href="./css/footerCommon.css">
+</head>
+<body>
+<!--头部-->
+<header>
+	<span class="back" onclick="window.history.back(-1);">
+		<i class="icon icon-angle-left"></i>
+	</span>
+	<select class="choose-lottery form-control">
+		<option value="0">任选二</option>
+		<option value="1">任选三</option>
+		<option value="2">任选四</option>
+		<option value="3">任选五</option>
+		<option value="4">任选六</option>
+		<option value="5">任选七</option>
+		<option value="6">任选八</option>
+		<option value="7">前一</option>
+		<option value="8">前二</option>
+		<option value="9">前三</option>
+	</select>
+	<i class="icon icon-bars icon-2x"></i>
+</header>
+<!--主体内容-->
+<main class="main">
+	<div class="main-head clearfix">
+		<span class="periods">17090440期</span><span class="count-down">(截止时间): <em class="text-red">9.30</em></span>
+	</div>
+	<!--投注类型-->
+	<div class="bet-type">
+		<div class="bet-type-1 clearfix">
+			<span class="bg-red pttz">普通投注</span><span class="dttz">胆拖投注</span>
+		</div>
+		<div class="bet-type-2 clearfix">
+			<span class="bg-red zuxtz">组选投注</span><span class="zhixtz">直选投注</span>
+		</div>
+	</div>
+	<div class="title clearfix">
+		<!--奖金提示-->
+		<span class="pull-left">猜中开奖的任意2个号码，奖金6元</span>
+		<span class="shake pull-right">摇一摇/遗漏</span>
+	</div>
+	<div class="wrapper wrapper-box1">
+		<div class="lottery-box row">
+			<div class="col-xs-2 colsm-2">
+				<em>01</em>
+			</div>
+			<div class="col-xs-2 colsm-2">
+				<em>02</em>
+			</div>
+			<div class="col-xs-2 colsm-2">
+				<em>03</em>
+			</div>
+			<div class="col-xs-2 colsm-2">
+				<em>04</em>
+			</div>
+			<div class="col-xs-2 colsm-2">
+				<em>05</em>
+			</div>
+			<div class="col-xs-2 colsm-2">
+				<em>06</em>
+			</div>
+			<div class="col-xs-2 colsm-2">
+				<em>07</em>
+			</div>
+			<div class="col-xs-2 colsm-2">
+				<em>08</em>
+			</div>
+			<div class="col-xs-2 colsm-2">
+				<em>09</em>
+			</div>
+			<div class="col-xs-2 colsm-2">
+				<em>10</em>
+			</div>
+			<div class="col-xs-2 colsm-2">
+				<em>11</em>
+			</div>
+		</div>
+	</div>
+	<div class="wrapper wrapper-box2">
+		<p><span >胆码</span> <em>可选1个</em></p>
+		<span>第一位</span>
+		<div class="lottery-box row lottery-box-1">
+			<div class="col-xs-2 col-sm-2">
+				<em data-choose="ball-01">01</em>
+			</div>
+			<div class="col-xs-2 col-sm-2">
+				<em data-choose="ball-02">02</em>
+			</div>
+			<div class="col-xs-2 col-sm-2">
+				<em data-choose="ball-03">03</em>
+			</div>
+			<div class="col-xs-2 col-sm-2">
+				<em data-choose="ball-04">04</em>
+			</div>
+			<div class="col-xs-2 col-sm-2">
+				<em data-choose="ball-05">05</em>
+			</div>
+			<div class="col-xs-2 col-sm-2">
+				<em data-choose="ball-06">06</em>
+			</div>
+			<div class="col-xs-2 col-sm-2">
+				<em data-choose="ball-07">07</em>
+			</div>
+			<div class="col-xs-2 col-m-2">
+				<em data-choose="ball-08">08</em>
+			</div>
+			<div class="col-xs-2 col-sm-2">
+				<em data-choose="ball-09">09</em>
+			</div>
+			<div class="col-xs-2 col-sm-2">
+				<em data-choose="ball-10">10</em>
+			</div>
+			<div class="col-xs-2 col-sm-2">
+				<em data-choose="ball-11">11</em>
+			</div>
+		</div>
+		<p><span >拖码</span>可选1-10个</p>
+		<span>第二位</span>
+		<div class="lottery-box row lottery-box-2">
+			<div class="col-xs-2 col-sm-2">
+				<em data-choose="ball-01">01</em>
+			</div>
+			<div class="col-xs-2 col-sm-2">
+				<em data-choose="ball-02">02</em>
+			</div>
+			<div class="col-xs-2 col-sm-2">
+				<em data-choose="ball-03">03</em>
+			</div>
+			<div class="col-xs-2 col-sm-2">
+				<em data-choose="ball-04">04</em>
+			</div>
+			<div class="col-xs-2 col-sm-2">
+				<em data-choose="ball-05">05</em>
+			</div>
+			<div class="col-xs-2 col-sm-2">
+				<em data-choose="ball-06">06</em>
+			</div>
+			<div class="col-xs-2 col-sm-2">
+				<em data-choose="ball-07">07</em>
+			</div>
+			<div class="col-xs-2 col-sm-2">
+				<em data-choose="ball-08">08</em>
+			</div>
+			<div class="col-xs-2 col-sm-2">
+				<em data-choose="ball-09">09</em>
+			</div>
+			<div class="col-xs-2 col-sm-2">
+				<em data-choose="ball-10">10</em>
+			</div>
+			<div class="col-xs-2 col-sm-2">
+				<em data-choose="ball-11">11</em>
+			</div>
+		</div>
+		<span>第三位</span>
+		<div class="lottery-box lottery-box-3 row">
+			<div class="col-xs-2 col-sm-2">
+				<em>01</em>
+			</div>
+			<div class="col-xs-2 col-sm-2">
+				<em>02</em>
+			</div>
+			<div class="col-xs-2 col-sm-2">
+				<em>03</em>
+			</div>
+			<div class="col-xs-2 col-sm-2">
+				<em>04</em>
+			</div>
+			<div class="col-xs-2 col-sm-2">
+				<em>05</em>
+			</div>
+			<div class="col-xs-2 col-sm-2">
+				<em>06</em>
+			</div>
+			<div class="col-xs-2 col-sm-2">
+				<em>07</em>
+			</div>
+			<div class="col-xs-2 col-sm-2">
+				<em>08</em>
+			</div>
+			<div class="col-xs-2 col-sm-2">
+				<em>09</em>
+			</div>
+			<div class="col-xs-2 col-sm-2">
+				<em>10</em>
+			</div>
+			<div class="col-xs-2 col-sm-2">
+				<em>11</em>
+			</div>
+		</div>
+	</div>
+</main>
+<!-- 小对话框 -->
+<div class="panel panel-danger prop-panel">
+	请选择一个胆码
+</div>
+<!--尾部-->
+<footer class="footer">
+	<p class="show-or-hide">若中奖:奖金 <em class="bonus"></em>，<span>盈利</span>  <em class="profit"></em></p>
+	<div class="clearfix">
+		<button class="btn clear-bar pull-left">清空</button>
+		<span class="show-or-hide">共 <em class="count">0</em> 注 <em class="pay-money">0</em> 元</span>
+		<button class="btn confirm pull-right btn-primary">确定</button>
+	</div>
+</footer>
+<!-- ZUI Javascript 依赖 jQuery -->
+<script src="./node_modules/zui/dist/lib/jquery/jquery.js"></script>
+<!-- ZUI 标准版压缩后的 JavaScript 文件 -->
+<script src="./node_modules/zui/dist/js/zui.min.js"></script>
+<!--引入页面js代码-->
+<script src="js/common.js"></script>
+<script src="js/syxw.js"></script>
+<!--<script src="js/test.js"></script>-->
+</body>
+</html>

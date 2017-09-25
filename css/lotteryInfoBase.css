@@ -1,0 +1,55 @@
+/*开奖信息  子页面公共样式*/
+
+/*开奖信息具体信息 列表公共样式*/
+.wrapper{
+    margin-bottom:4rem;
+}
+.detail-list>dd{
+    padding: .83rem;
+    border-bottom: 1px solid #ccc;
+}
+.detail-list p{
+    color: #999;
+    position: relative;
+}
+.detail-list p>.icon{
+    display: inline-block;
+    width: 1.42rem;
+    height: 100%;
+    position: absolute;
+    right: 2%;
+    top: 25%;
+}
+
+/*奖池信息 公共样式*/
+.awardDetail{
+    width: 90%;
+    border: 1px solid #ccc;
+    margin: .5rem  auto;
+    padding: .3rem;
+    display: none;
+}
+.awardDetail .table{
+    text-align: center;
+    margin-bottom: 10px;
+}
+.awardDetail tbody>tr:first-child{
+    background: #D6EAFC;
+}
+.awardDetail .table td, .awardDetail .table th{
+    padding: 0;
+}
+
+/*尾部投注按钮样式*/
+.footer{
+    position: fixed;
+    bottom: 0;
+    background: #ccc;
+    height: 4.5rem;
+    width: 100%;
+}
+.footer>.btn{
+    width: 40%;
+    margin:  2% auto;
+    display: block;
+}

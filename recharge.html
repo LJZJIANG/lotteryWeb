@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--视口设置-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- ZUI 标准版压缩后的 CSS 文件 -->
+    <link rel="stylesheet" href="./node_modules/zui/dist/css/zui.min.css">
+    <title>三堂彩</title>
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/recharge.css">
+
+
+</head>
+<body>
+<!--头部-->
+<header>
+    <span class="back" onclick="window.history.back(-1);"><i class="icon icon-angle-left"></i></span>
+    <p>充值</p>
+</header>
+<!--主体内容-->
+<main>
+    <div class="recharge-money">
+        <p><span>充值金额</span>  <input class="form-control" id="money" type="text" value="500"></p>
+        <div class="choose-money row">
+            <div class="col-xs-3 col-sm-3">
+                <span>10</span>
+            </div>
+            <div class="col-xs-3 col-sm-3">
+                <span>20</span>
+            </div>
+            <div class="col-xs-3 col-sm-3">
+                <span>50</span>
+            </div>
+            <div class="col-xs-3 col-sm-3">
+                <span>100</span>
+            </div>
+            <div class="col-xs-3 col-sm-3">
+                <span class="active">500</span>
+            </div>
+            <div class="col-xs-3 col-sm-3">
+                <span>1000</span>
+            </div>
+            <div class="col-xs-3 col-sm-3">
+                <span>5000</span>
+            </div>
+            <div class="col-xs-3 col-sm-3">
+                <span>10000</span>
+            </div>
+        </div>
+    </div>
+    <div class="pay-way">
+        <span><img src="./images/weixin_pay_logo.png" alt="微信支付">微信支付 <input type="radio" checked="checked" name="pay-way"></span>
+        <span><img src="./images/bank_pay_logo.png" alt="银联快捷支付">银联快捷支付 <input type="radio"  name="pay-way"><br><span class="text">无需网银，有卡就能支付</span></span>
+    </div>
+    <!--提示信息-->
+    <div class="promptInfo">
+        <span>温馨提示：</span><br>
+        <span>1.充值金额至少10元；</span><br>
+        <span>2.充值免续费，充值后实时到账；</span><br>
+        <span>3.为防止套现与洗钱不法行为，充值金额需100%消费；</span><br>
+        <span>4.如出现充值未到账，请联系客服xxxxxxx</span>
+    </div>
+</main>
+<!--尾部-->
+<footer>
+    <button class="btn">充值</button>
+</footer>
+<!-- ZUI Javascript 依赖 jQuery -->
+<script src="./node_modules/zui/dist/lib/jquery/jquery.js"></script>
+<!-- ZUI 标准版压缩后的 JavaScript 文件 -->
+<script src="./node_modules/zui/dist/js/zui.min.js"></script>
+<script src="./js/recharge.js"></script>
+</body>
+</html>

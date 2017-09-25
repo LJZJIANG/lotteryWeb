@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--视口设置-->
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <!-- ZUI 标准版压缩后的 CSS 文件 -->
+    <link rel="stylesheet" href="./node_modules/zui/dist/css/zui.min.css">
+    <title>三堂彩</title>
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/personalData.css">
+
+</head>
+<body>
+<!--头部-->
+<header>
+    <span class="back" onclick="window.history.back(-1);"><i class="icon icon-angle-left"></i></span>
+    <p>个人资料</p>
+</header>
+<!--主体内容-->
+<main class="wrapper">
+    <div class="person-info">
+        <img src="./images/default_figure.png" alt="">
+        <span>你好， <em class="username">13999999999</em></span>
+    </div>
+    <div class="tel">
+        <span>手机号:139xxxxxxxx</span>
+    </div>
+    <a href="./realAuth.html">
+        <div class="real-auth">
+            <span>实名认证</span>
+            <span class="pull-right">
+           <em class="text-red">(未认证)</em>
+            <i class="icon icon-angle-right"></i>
+        </span>
+        </div>
+    </a>
+    <a href="./bankCard.html">
+        <div class="bank-card">
+            <span>银行卡</span>
+            <span class="pull-right">
+               <em class="text-red">(未绑定)</em>
+                <i class="icon icon-angle-right"></i>
+            </span>
+        </div>
+    </a>
+    <a href="./editPassword.html">
+        <div class="edit-pwd">
+            <span>修改密码</span>
+            <span class="pull-right">
+                <i class="icon icon-angle-right"></i>
+            </span>
+        </div>
+    </a>
+    <a href="./bindEmail.html">
+        <div class="bind-email">
+            <span>绑定邮箱</span>
+            <span class="pull-right">
+                <i class="icon icon-angle-right"></i>
+            </span>
+        </div>
+    </a>
+</main>
+<!--点击提现后提示框-->
+<div class="container-box">
+    <div class="prompt">
+        <div class="prompt-top">
+            <img src="./images/u61.png" alt="">
+            <p>设置成功</p>
+        </div>
+        <button class="goback btn" type="button">返回</button>
+    </div>
+    <div class="prompt setting-box">
+        <div class="prompt-top">
+            <p>设置昵称</p>
+            <span>昵称&emsp;<input type="text" placeholder="请输入2-6个汉字/数字/字母" maxlength="6"><em>×</em></span>
+        </div>
+        <button class="cancel btn" type="button">取消</button>&emsp;&emsp;<button class="confirm btn" type="button">确定</button>
+    </div>
+</div>
+<!-- ZUI Javascript 依赖 jQuery -->
+<script src="./node_modules/zui/dist/lib/jquery/jquery.js"></script>
+<!-- ZUI 标准版压缩后的 JavaScript 文件 -->
+<script src="./node_modules/zui/dist/js/zui.min.js"></script>
+<script>
+    $(function () {
+        var $container_box = $('.container-box');
+        var $input = $('.prompt-top input');
+
+        $('.wrapper>.person-info').on('click',function () {
+            $container_box.show(); // 点击个人信息，显示遮罩层
+            $('.setting-box').show();
+        })
+        $('.cancel').on('click',function () {
+            $container_box.hide(); // 隐藏 遮罩层
+        })
+        $('.confirm').on('click',function () {
+            $('.setting-box').hide();
+
+            $('.container-box>div:first-child').show();
+
+            // 获取输入框的内容
+            var value = $input.val();
+            console.log('value=',value);
+        })
+        $('.goback').on('click',function () {
+            $('.prompt').hide();
+            $container_box.hide();
+        })
+
+        $('.prompt-top em').on('click',function () {
+            $input.val('');
+            $input.focus();
+        })
+    })
+
+</script>
+</body>
+</html>

@@ -1,0 +1,85 @@
+
+.betting-info>p:first-of-type>span{
+    color: red;
+}
+
+/*开奖号码*/
+.lottery-number em{
+    display: inline-block;
+    width: 1.5rem;
+    height: 1.5rem;
+    background: #f00;
+    color: #fff;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 1.5rem;
+    margin-right: .5rem;
+}
+.dan{
+    display: inline-block;
+    border-radius: 50%;
+    width: 2rem;
+    height: 2rem;
+    line-height: 2rem;
+    color: #fff;
+    background: #f00;
+}
+
+.wrapper-box{
+    border-bottom:1px solid #ccc ;
+}
+.row .item-title{
+    font-weight: bold;
+}
+.wrapper-box .score-box span{
+    display: inline-block;
+    float: left;
+    width: 32%;
+    text-align: center;
+    margin-bottom: 5px;
+    border: 1px solid #ccc;
+}
+
+.footer>.btn{
+    position: absolute;
+    width: 40%;
+    height: 3.5rem;
+    left: calc(50% - 40%/2);
+    top:calc(50% - 3.5rem/2);
+}
+
+/*
+11选5 投注内容
+*/
+.bet-list>li{
+    height: 3.8rem;
+    padding: .3rem 0;
+    border-bottom: 1px dashed #ccc;
+}
+.bet-list>li>span{
+    display: inline-block;
+}
+.bet-list p>em{
+    display: inline-block;
+    width: 1.5rem;
+    height: 1.5rem;
+    color: #f00;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 1.5rem;
+    border: 1px solid #f00;
+    /*margin-right: .5rem;*/
+    margin: 0 0.1rem;
+}
+.bet-list>li>.order{
+    width: 15%;
+    line-height:3.8rem;
+    float: left;
+    text-align: center;
+}
+.bet-list>li p{
+    margin-bottom: .3rem;
+}
+.football-lottery{
+    display: none;
+}

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--============================提款 界面=========================================-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--视口设置-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- ZUI 标准版压缩后的 CSS 文件 -->
+    <link rel="stylesheet" href="./node_modules/zui/dist/css/zui.min.css">
+    <title>三堂彩</title>
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/withdrawals.css">
+</head>
+<body>
+<!--头部-->
+<header>
+    <span class="back" onclick="window.history.back(-1);"><i class="icon icon-angle-left"></i></span>
+    <p>提款</p>
+</header>
+<!--主体内容-->
+<main>
+    <!--银行卡列表-->
+    <section class="card-list">
+        <div class="card-info">
+            <dl class="card">
+                <img src="./images/epaysdk_icon_bank0003.png" alt="">
+                <dt>招商银行</dt>
+                <dd>储蓄卡</dd>
+                <dt>6222********0916</dt>
+            </dl>
+            <dl class="card">
+                <img src="./images/epaysdk_icon_bank0001.png" alt="">
+                <dt>中国银行</dt>
+                <dd>储蓄卡</dd>
+                <dt>6222********0916</dt>
+            </dl>
+            <dl class="card">
+                <img src="./images/epaysdk_icon_bank0002.png" alt="">
+                <dt>农业银行</dt>
+                <dd>储蓄卡</dd>
+                <dt>6222********0916</dt>
+            </dl>
+        </div>
+        <span class="more-card"><i class="icon icon-double-angle-down"></i></span>
+    </section>
+    <div class="withdrawal-box">
+        <div class="withdrawal-money">
+             <p>提款金额</p>
+            <span>¥</span><input type="text" name="number" class="number"/>
+        </div>
+    </div>
+    <p class="withdrawal-money-text">可提现余额:<span class="text-red">XXX元</span></p>
+</main>
+<!--尾部-->
+<footer>
+    <button class="withdrawal-btn btn">提款</button>
+</footer>
+<!--点击提现后提示框-->
+<div class="container-box">
+    <div class="prompt">
+        <div class="prompt-top">
+            <img src="./images/u61.png" alt="">
+            <p>恭喜你提现审核通过！请等待为您处理。</p>
+        </div>
+        <button class="confirm btn" type="button">确定</button>
+    </div>
+</div>
+<!-- ZUI Javascript 依赖 jQuery -->
+<script src="./node_modules/zui/dist/lib/jquery/jquery.js"></script>
+<!-- ZUI 标准版压缩后的 JavaScript 文件 -->
+<script src="./node_modules/zui/dist/js/zui.min.js"></script>
+<script>
+    var $withdrawalBtn = $('.withdrawal-btn');
+    $withdrawalBtn.on('click',function () {
+        $('.container-box').show();
+    });
+
+    $('.confirm').on('click',$withdrawalBtn,function () {
+        location.href = './personal.html';
+    })
+    /*
+    思路：
+    1.获取用户的所有银行卡列表，并加载到页面中，只显示第一张卡，别的设置display：none
+    2.点击向下更多箭头时，将列表中的所有银行卡都显示  display：block，并更改箭头方向
+    3.当用户点击其中某一张时，隐藏别的银行卡
+    * */
+
+    var  $cards = $('.card');
+    var $moreCard = $('.more-card');
+    var $down = $('.more-card>.icon');
+    var flag = false;
+    var index = 0; // 设置默认的银行卡索引为0
+    // 将除了第一张银行卡之外的都隐藏
+    $cards.css('display','none').eq(0).show();
+    $cards.on('click',function () {
+        // 获取点击的银行卡索引值 并覆盖设置的索引值0
+        index = $(this).index();
+        $cards.css('display','none').eq(index).show();
+        $down.removeClass('icon-double-angle-up').addClass('icon-double-angle-down');
+    })
+    // 当点击获取更多银行卡时，显示全部银行卡，并改变箭头方向
+    $moreCard.on('click',function () {
+//        console.log('你点击了更多列表。。。'+new Date());
+        if(!flag){
+            $cards.css('display','block');
+            $down.removeClass('icon-double-angle-down').addClass('icon-double-angle-up');
+            flag = true;
+        }else{
+            $cards.css('display','none').eq(index).show();
+            $down.removeClass('icon-double-angle-up').addClass('icon-double-angle-down');
+            flag = false;
+        }
+    })
+
+</script>
+</body>
+</html>

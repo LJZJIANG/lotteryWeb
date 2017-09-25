@@ -1,0 +1,24 @@
+.awardList dd{
+    padding: .83rem;
+    position: relative;
+    border-bottom: 1px solid #ccc;
+}
+.awardList a{
+    display: block;
+    color: #999;
+    text-decoration: none;
+}
+p>.title{
+    color: #333;
+    font-size: 1.40rem;
+}
+a>.icon{
+    display: block;
+    width: 1.42rem;
+    height: 100%;
+    position: absolute;
+    right: 2%;
+    top: 48%;
+}
+
+

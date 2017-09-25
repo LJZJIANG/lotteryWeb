@@ -1,0 +1,65 @@
+.main{
+    margin-bottom: 4rem;
+}
+.share{
+    position: absolute;
+    right: 2%;
+    top:.3rem;
+}
+.wrap-box{
+    padding: 0 .3rem;
+    overflow: hidden;
+}
+.wrap-box>img{
+    width: 3rem;
+    margin-right: .5rem;
+    float: left;
+}
+.wrap-box>span{
+    display: inline-block;
+    padding: .3rem;
+    float: left;
+}
+.wrap-box>span:last-child{
+    text-align: right;
+    float: right;
+}
+.wrap-box>span .title{
+    font-size: 1.2rem;
+}
+.wrap-box .email{
+    width: 1em;
+    margin-left: 2rem;
+    margin-top: 1rem;
+}
+
+/*方案信息*/
+.message{
+    height: 2rem;
+    background: #F2F2F2;
+    font-size: 1.2rem;
+    font-weight: 600;
+    line-height: 2rem;
+}
+.betting-info>p{
+    line-height: 2.3rem;
+}
+/*尾部样式*/
+
+.footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-size: 1.5rem;
+    height: 4rem;
+    background: #F2F2F2;
+}
+
+.share-list{
+    display: none;
+    line-height: 4rem;
+}
+.share-list>div>img{
+    width: 3rem;
+    height: 3rem;
+}

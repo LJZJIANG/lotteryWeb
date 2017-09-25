@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--视口设置-->
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <!-- ZUI 标准版压缩后的 CSS 文件 -->
+    <link rel="stylesheet" href="./node_modules/zui/dist/css/zui.min.css">
+    <title>三堂彩</title>
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/personalCommon.css">
+    <style>
+        .prompt{
+            height: 17rem;
+        }
+        .wrapper p{
+            border-bottom: 1px solid #cccccc;
+            padding: 0 2rem;
+        }
+        .wrapper p:nth-child(3){
+            border-bottom: none;
+        }
+        .wrapper p>span{
+            width: 24%;
+        }
+        .submit{
+            width: 30%;
+            margin-left:calc(50% - 30%/2);
+        }
+        .wrapper .form-control{
+            width: 70%;
+        }
+        .close{
+            position: absolute;
+            right: 10%;
+            top: 34%;
+        }
+        .unauthorized{
+            /*display: none;*/
+        }
+        /*已登录 样式*/
+
+        .authenticated{
+            display: none;
+        }
+        p>em{
+            border: 0;
+            padding: 0;
+        }
+    </style>
+</head>
+<body>
+<!--头部-->
+<header>
+    <span class="back" onclick="window.history.back(-1);"><i class="icon icon-angle-left"></i></span>
+    <p>实名认证</p>
+</header>
+<!--主体内容-->
+<main class="wrapper">
+    <!--未实名认证-->
+    <div class="unauthorized">
+        <p>
+            <span>真实姓名</span>
+            <input type="text" class="form-control username" placeholder="请输入真实姓名">
+            <button type="button" class="close clear1"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+        </p>
+        <p>
+            <span>身份证号码</span>
+            <input type="text" class="form-control id-card" placeholder="请输入身份证号码">
+            <button type="button" class="close clear2"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+        </p>
+        <p>提示：xxxxxxxxx</p>
+        <button class=" submit btn">提交</button>
+    </div>
+    <!--已实名认证-->
+    <div class="authenticated">
+        <p>
+            <span>真实姓名：</span> <em>陈**</em>
+        </p>
+        <p>
+            <span>身份证号：</span> <em>511502*****111111111</em>
+        </p>
+    </div>
+</main>
+<!--点击提现后提示框-->
+<div class="container-box">
+    <div class="prompt">
+        <div class="prompt-top">
+            <img src="./images/u61.png" alt="">
+            <p>认证成功</p>
+        </div>
+        <button class="goback btn" type="button">返回</button>
+    </div>
+</div>
+<!-- ZUI Javascript 依赖 jQuery -->
+<script src="./node_modules/zui/dist/lib/jquery/jquery.js"></script>
+<!-- ZUI 标准版压缩后的 JavaScript 文件 -->
+<script src="./node_modules/zui/dist/js/zui.min.js"></script>
+<script>
+    $(function () {
+        var username = $('.username');
+        var idCard = $('.id-card');
+        var $close_1 = $('.clear1');
+        var $close_2 = $('.clear2');
+        $close_1.on('click',function () {
+            username.val('');
+            username.focus();
+        });
+        $close_2.on('click',function () {
+            idCard.val('');
+            idCard.focus();
+        });
+        $('.submit').on('click',function () {
+            console.log(username.val(),idCard.val());
+            $('.container-box').show();
+        })
+        $('.goback').on('click',function () {
+            window.history.back(-1);
+        })
+    })
+
+</script>
+</body>
+</html>

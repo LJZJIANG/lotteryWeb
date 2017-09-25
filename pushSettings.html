@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--视口设置-->
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <!-- ZUI 标准版压缩后的 CSS 文件 -->
+    <link rel="stylesheet" href="./node_modules/zui/dist/css/zui.min.css">
+    <title>三堂彩</title>
+    <link rel="stylesheet" href="./css/common.css">
+    <style>
+        .wrapper>p{
+            height: 3rem;
+            line-height: 3rem;
+            font-size: 1.2rem;
+            font-weight: bold;
+            padding: 0 .5rem;
+            border-bottom: 1px solid #ccc;
+            background: #FCFCFC;
+        }
+        .wrapper>div{
+            padding: 0 .5rem;
+            font-size: 1.2rem;
+            border-bottom: 1px solid #ccc;
+        }
+        .switch>label:before{
+            width: 50px;
+        }
+        .switch.text-left>label:after {
+            right: 30px;
+        }
+        /*.switch.text-left>label:after, .switch.text-left>label:before {*/
+            /*right: 15px;*/
+        /*}*/
+    </style>
+</head>
+<body>
+<!--头部-->
+<header>
+    <span class="back"><i class="icon icon-angle-left"></i></span>
+    <p>推送设置</p>
+</header>
+<!--主体内容-->
+<main class="wrapper">
+    <p>开奖推送</p>
+    <div class="switch text-left">
+        <input type="checkbox">
+        <label>双色球</label>
+    </div>
+    <div class="switch text-left">
+        <input type="checkbox">
+        <label>大乐透</label>
+    </div>
+    <div class="switch text-left">
+        <input type="checkbox">
+        <label>福彩3D</label>
+    </div>
+    <div class="switch text-left">
+        <input type="checkbox">
+        <label>排列三/五</label>
+    </div>
+    <div class="switch text-left">
+        <input type="checkbox">
+        <label>胜负彩</label>
+    </div>
+    <p>中奖推送</p>
+    <div class="switch text-left">
+        <input type="checkbox">
+        <label>中奖推送</label>
+    </div>
+    <p>提醒登录</p>
+    <div class="switch text-left">
+        <input type="checkbox">
+        <label>提醒登录</label>
+    </div>
+    <p>彩种家奖</p>
+    <div class="switch text-left">
+        <input type="checkbox">
+        <label>彩种加奖</label>
+    </div>
+</main>
+
+<!-- ZUI Javascript 依赖 jQuery -->
+<script src="./node_modules/zui/dist/lib/jquery/jquery.js"></script>
+<!-- ZUI 标准版压缩后的 JavaScript 文件 -->
+<script src="./node_modules/zui/dist/js/zui.min.js"></script>
+<script>
+    $(function () {
+        var $inputs = $('input');
+        var $labels = $('label');
+        var arr = [];
+        $('.back').on('click',function () {
+            $inputs.each(function (index,item) {
+                if(item.checked){
+//                    console.log(index,item.parentNode);
+                console.log($labels.eq(index).html());
+                    arr.push({index:item.checked});
+                }
+            })
+//                console.log(arr)
+//                localStorage.setItem('isChecked',arr);
+//                localStorage.clear(); // 清除本地存储
+//                window.history.back(-1);
+        })
+
+    })
+
+</script>
+</body>
+</html>

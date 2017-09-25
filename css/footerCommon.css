@@ -1,0 +1,53 @@
+/*头部*/
+.icon-bars{
+    position: absolute;
+    right: 3%;
+    top: 1rem;
+}
+span{
+    display: inline-block;
+}
+.main{
+    margin-bottom: 4.5rem;
+}
+/*底部*/
+.footer{
+    width: 100%;
+    position: fixed;
+    background: #fff;
+    bottom: 0;
+    text-align: center;
+    z-index: 90;
+}
+.footer>p{
+    border-top: 1px solid #ccc;
+    height: 1.5rem;
+}
+.footer>p>em{
+    color: #f00;
+}
+.footer>div{
+    padding: 0 1rem;
+    height: 2.5rem;
+    line-height: 2.5rem;
+    border-top: 1px solid #ccc;
+}
+.footer>div em{
+    color: #f00;
+}
+.show-or-hide{
+    display: none;
+}
+
+.red-ball{
+    background: #F00 !important;
+    color: #fff;
+}
+
+.prop-panel{
+    font-weight: 600;
+    width: 45%;
+    padding: .5rem 1rem;
+    text-align: center;
+    display: none;
+}

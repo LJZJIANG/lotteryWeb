@@ -1,0 +1,61 @@
+/*
+购彩记录类型
+*/
+ul{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    list-style: none;
+}
+p{
+    margin: 0;
+}
+.record-type{
+    position: relative;
+    z-index: 90;
+}
+.record-type li{
+    position: relative;
+    float: left;
+    width: 33.33%;
+    text-align: center;
+    line-height: 3rem;
+    z-index: 92;
+    border-bottom:  1px solid #ccc;
+}
+.active{
+    color: #f00;
+    border-bottom: 2px solid #f00 !important;
+}
+.lottery-list li{
+    border-bottom: 2px dashed #ccc;
+    overflow: hidden;
+    text-align: center;
+    padding: 1rem;
+}
+.row{
+    margin: 0;
+}
+.col-md-3,.col-md-6,.col-xs-3,.col-xs-6,.col-md-6,.col-md-3{
+    padding: 0;
+}
+.tab-box>div{
+    display: none;
+}
+
+main>.tab-box>div:first-child{
+    display: block;
+}
+
+.lottery-list li img{
+    width: 2.5rem;
+    height: 2.5rem;
+}
+.lottery-time-data{
+    border-right:2px solid #ccc;
+    border-left:2px solid #ccc;
+}
+.to-lottery{
+    padding: 1.6rem .4rem;
+    box-sizing: border-box;
+}

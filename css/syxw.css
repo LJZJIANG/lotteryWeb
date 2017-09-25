@@ -1,0 +1,83 @@
+.choose-lottery{
+    display: inline-block;
+    width: 30%;
+    height: 2.5rem;
+    font-size: 1rem;
+    text-align: center;
+    padding: .5rem;
+    margin-left: calc(50% - 30%/2);
+    margin-top: .5rem;
+}
+
+.main-head>span{
+    display: inline-block;
+    border: 1px solid #ccc;
+    float: left;
+    border-top: 0;
+    padding: .1rem .2rem .1rem 1rem;
+}
+.main-head>.periods{
+    border-right: 0;
+    width: 35%;
+
+}
+.main-head>.count-down{
+    width: 65%;
+}
+.bet-type{
+    padding: 1rem;
+    text-align: center;
+}
+.bet-type-2{
+    display: none;
+}
+.bet-type span{
+    width: 25%;
+    float: left;
+    border: 1px solid #535353;
+}
+.bet-type span:nth-child(odd){
+    border-right: 0;
+}
+.main>.title{
+    padding: 0 1rem;
+    font-size: .6rem;
+}
+.lottery-box em{
+    display: inline-block;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    margin-top: .5rem;
+    width: 2.58rem;
+    height: 2.58rem;
+    font-size: 1.5rem;
+    line-height: 2.58rem;
+}
+.wrapper-box2>p,.wrapper-box2>span{
+    margin: 1rem 0 0 1rem;
+    /*display: none;*/
+}
+.wrapper-box2>span{
+    text-align: center;
+    width: 18%;
+    border: 1px solid #ccc;
+    padding: .2rem 0;
+    display: none;
+}
+
+.wrapper-box2{
+    display: none;
+}
+.wrapper-box2>p>span{
+    color: #f00;
+    font-size: 1.2rem;
+}
+
+.lottery-box-3{
+    display: none;
+}
+
+.panel{
+    margin: 5% auto;
+}

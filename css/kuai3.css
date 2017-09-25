@@ -1,0 +1,208 @@
+.head-title>span{
+    font-size: 1.3rem;
+}
+.head-title .icon{
+    position: relative;
+    bottom: -0.3rem;
+    left: .3rem;
+    color: #878383;
+}
+
+section>div{
+    width: 50%;
+    text-align: center;
+    padding: .3rem 0;
+    background: #F9F9F9;
+    position: relative;
+}
+section>div:first-of-type{
+    border-right: 1px solid #CCCCCC;
+}
+.lottery-results .icon{
+    position: absolute;
+    right: 1.5rem;
+    top: 35%;
+    color:#878383 ;
+}
+.lottery-results-number>em{
+    display: inline-block;
+    margin-right: .4rem;
+}
+.last-time>span{
+    color: #f00;
+    font-weight: bold;
+}
+/*开奖记录*/
+.lottery-record{
+    display: none;
+    text-align: center;
+}
+.lottery-record  th{
+    text-align: center;
+}
+.lottery-number>em{
+    margin-right: .5rem;
+}
+.main{
+    margin-bottom:7rem;
+    height: 70%;
+}
+/*
+和值样式
+*/
+.main>div{
+    padding: .3rem;
+}
+.introduce>em{
+    color: #f00;
+}
+.shake{
+    float: right;
+    margin-right: 2rem;
+}
+.he-zhi-choose{
+    margin: .5rem 0;
+}
+.wrapper{
+    margin: .5rem 0;
+}
+.choose-left{
+    width: 12%;
+}
+.choose-right,.quick-choose-box{
+    width: 85%;
+    display: flex;
+    flex-grow: 1;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.choose-left>button{
+    display: block;
+    margin-bottom: 1.5rem;
+}
+.choose-number-box{
+    text-align: center;
+    width: 21%;
+    margin-bottom: .5rem;
+}
+.choose-number{
+    border: 1px solid #ccc;
+    background: #F9F9F9;
+    border-radius: 7px;
+    padding: 0 .3rem;
+}
+.choose-number>.number{
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+.choose-number>p{
+    font-size: .9rem;
+}
+.quick-choose{
+    margin-top: 2rem;
+}
+.quick-choose-box{
+    margin-top: 1rem;
+    width: 87%;
+}
+.quick-choose-box>div{
+    text-align: center;
+    width: 21%;
+    font-weight: bold;
+    font-size: 1.4rem;
+    border: 1px solid #ccc;
+    background: #F9F9F9;
+    border-radius: 7px;
+    padding: .2rem;
+}
+.betting-option-box{
+    text-align: center;
+    margin-top: 4rem;
+    background: #fff;
+    padding: .3rem;
+    display: flex;
+    flex-grow: 1;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.betting-option{
+    border: 1px solid #ccc;
+    width: 26%;
+    margin-bottom: .3rem;
+}
+
+.betting-option:last-of-type{
+    visibility: hidden;
+}
+.betting-option-example>em{
+    display: inline-block;
+    border: 1px solid #ccc;
+    background: #F9F9F9;
+    width: 1.4rem;
+    height: 1.4rem;
+    border-radius: 3px;
+}
+.current-border{
+    border: 1px solid #f00;
+}
+/*************************隐藏除和值外选号页面**********************************/
+.sthdx,.sthtx,.slhtx,.sbth,.ebth,.ethdx,.ethfx{
+    display: none;
+}
+/**************************三同号单选*********************************/
+.sthdx .choose-number-box{
+    width: 26%;
+}
+.sthdx .choose-number{
+    padding: .7rem 0;
+    margin-right: 1rem;
+}
+.sthdx .missing{
+    margin-right: 1rem;
+}
+/**************************三同号通选*********************************/
+.sthtx .choose-number-box{
+    width: 55%;
+}
+.sthtx .choose-number{
+    padding: .4rem 0;
+}
+/**************************三连号通选*********************************/
+.slhtx .choose-number-box{
+    width: 50%;
+}
+.slhtx .choose-number{
+    padding: .4rem 0;
+}
+/**************************三不同号*********************************/
+.sbth .choose-number-box,.ebth .choose-number-box,.ethdx .choose-number-box,.ethfx .choose-number-box{
+    width: 25.1%;
+}
+.sbth .choose-number,.ebth .choose-number,.ethdx .choose-number,.ethfx .choose-number{
+    padding: .4rem 0;
+    margin-right: 2rem;
+}
+.sbth .missing,.ebth .missing,.ethfx .missing,.ethdx .missing{
+    margin-right: 2rem;
+}
+/**************************二同号单选*********************************/
+.ethdx-title{
+    text-align: center;
+    font-size: 1.2rem;
+    margin-top: .5rem;
+}
+.ethdx .choose-left>button{
+    margin-bottom: 1rem;
+}
+.ethdx-title:last-of-type{
+    margin: 1rem 0;
+}
+.ethdx>.choose-right{
+    margin-right: 1rem;
+}
+
+.panel{
+    position: absolute;
+    bottom: 20%;
+    left: calc(50% - 45%/2);
+}
